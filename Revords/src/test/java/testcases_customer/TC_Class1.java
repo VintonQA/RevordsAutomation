@@ -37,7 +37,7 @@ public class TC_Class1 extends Base
 	{
 		boolean installStatus=isAppInstalled("com.revordscustomer.app");
 		System.out.println("App Installation status :- "+installStatus);
-		//logger.info("App Installation status :- "+installStatus);
+		logger.info("App Installation status :- "+installStatus);
 	}
 	
 	@Test(priority = 1)
@@ -54,7 +54,7 @@ public class TC_Class1 extends Base
 		String expectedMessage="Please enter valid credentials.";
 		Assert.assertEquals(actualMessage,expectedMessage,"Error Message didn't Matched/Found");
 		System.out.println("Login Failed!!!! Due to invalid credentials");
-		//logger.info("Login Failed!!!! Due to invalid credentials");
+		logger.info("Login Failed!!!! Due to invalid credentials");
 		
 	}
 	
@@ -70,13 +70,13 @@ public class TC_Class1 extends Base
 		//logger.info("Password Entered");
 		custLogin.click_loginButton();
 		System.out.println("Clicked Login Button");
-		//logger.info("Clicked Login Button");
+		logger.info("Clicked Login Button");
 		custDash=new Customer_Dashboard_Page(driver);
 		boolean status=custDash.number1status();
 		Assert.assertEquals(status,true,"User Has not landed on dashboard");
-		//logger.info("Customer logged in successfully");
+		logger.info("Customer logged in successfully");
 		System.out.println("Customer logged in successfully & Landed on Dashboard");
-		//logger.info("Customer logged in successfully & Landed on Dashboard Page");
+		logger.info("Customer logged in successfully & Landed on Dashboard Page");
 	}
 	
 	@Test(priority = 3)
@@ -96,7 +96,7 @@ public class TC_Class1 extends Base
 		boolean status=custDash.verify_dashboardPage();
 		Assert.assertEquals(status,true,"User redirected to Enter Information Page");
 		System.out.println("Customer Unable to SignIn with less then 10 digit mobile number");
-		//logger.info("Customer Unable to SignIn with less then 10 digit mobile number");
+		logger.info("Customer Unable to SignIn with less then 10 digit mobile number");
 		
 	}
 	
@@ -106,7 +106,7 @@ public class TC_Class1 extends Base
 		boolean status=custDash.verify_visibility_of_TermsAndConditions();
 		Assert.assertEquals(status,true);
 		System.out.println("Terms And Conditions link is visible  "+status);
-		//logger.info("Terms And Conditions link is visible  "+status);
+		logger.info("Terms And Conditions link is visible  "+status);
 	}
 	
 	@Test(priority = 5)
@@ -114,9 +114,9 @@ public class TC_Class1 extends Base
 	{
 		String TermsPageTitle=custDash.verify_TermsANDCondition_IsClickable();
 		Assert.assertEquals(TermsPageTitle,"Terms & Privacy Policy","Customer not landed on Terms AND Conditions Page");
-		//logger.info("Customer landed on Terms AND Conditions Page");
+		logger.info("Customer landed on Terms AND Conditions Page");
 		custDash.close_privacypage();
-		//logger.info("Terms and Conditions Page is Closed");
+		logger.info("Terms and Conditions Page is Closed");
 	}
 	
 	
@@ -139,9 +139,9 @@ public class TC_Class1 extends Base
 		String actualResult=custInfo.bannerText();
 		String expectedResult="Enter Your Information";
 		Assert.assertEquals(actualResult,expectedResult,"customer Not redirected to Information page");
-		//logger.info("Customer is logged in Successfully using 10 digit Mobile Number");
+		logger.info("Customer is logged in Successfully using 10 digit Mobile Number");
 		System.out.println("Customer redirected to information page");
-		//logger.info("Customer is redirected to Enter Information Page");
+		logger.info("Customer is redirected to Enter Information Page");
 	}
 	
 	@Test(priority = 7)
@@ -149,7 +149,7 @@ public class TC_Class1 extends Base
 	{
 		custInfo=new Customer_Info_Page(driver);
 		custInfo.enter_CustomerName();
-		//logger.info("Entered Customer Name on Information Page");
+		logger.info("Entered Customer Name on Information Page");
 		System.out.println("Entered Customer Name");
 	}
 	
@@ -157,7 +157,7 @@ public class TC_Class1 extends Base
 	public void verify_EmailTextBox_InformationPage()
 	{
 		custInfo.enter_customerEmail();
-		//logger.info("Entered Customer Email ID on Information Page");
+		logger.info("Entered Customer Email ID on Information Page");
 		System.out.println("Entered Customer Email ID");
 	}
 	
@@ -166,7 +166,7 @@ public class TC_Class1 extends Base
 	{
 		custInfo.choose_custBirthMonth();
 		System.out.println("Clicked on birth Month");
-		//logger.info("Customer clicked on Month DropDown");
+		logger.info("Customer clicked on Month DropDown");
 //		custInfo=new Customer_Info_Page(driver);
 //		custInfo.choose_birthMonth();
 		
@@ -178,7 +178,7 @@ public class TC_Class1 extends Base
 		{
 		custInfo.choose_birthMonth();
 		System.out.println("Customer is able to choose Birth month");
-		//logger.info("Customer choosed Birth Month");
+		logger.info("Customer choosed Birth Month");
 		
 		}
 		catch (Exception e) {
@@ -198,9 +198,9 @@ public class TC_Class1 extends Base
 	public void customer_choose_BirthDate()
 	{
 		custInfo.choose_custBirthDate();
-		//logger.info("Customer clicked on Datedrop Down");
+		logger.info("Customer clicked on Datedrop Down");
 		custInfo.choose_birthDate();
-		//logger.info("Customer Choosed birth date");
+		logger.info("Customer Choosed birth date");
 		System.out.println("Customer is able to choose Birth Date");
 		custInfo.click_OKButton_dateDropDown();
 		System.out.println("Date is selected from Date dropdown");
@@ -212,7 +212,7 @@ public class TC_Class1 extends Base
 		custInfo.choose_optINSMS();
 		custInfo.choose_optOutSMS();
 		System.out.println("Opt-in And Opt-out Radio Buttons are visible and clickable");
-		//logger.info("Opt-in And Opt-out Radio Buttons are visible and clickable");
+		logger.info("Opt-in And Opt-out Radio Buttons are visible and clickable");
 	}
 	
 	@Test(priority = 13)
@@ -237,7 +237,7 @@ public class TC_Class1 extends Base
 	{
 		custInfo.click_letsStartButton();
 		System.out.println("Lets Start Button is Clicked");
-		//logger.info("Lets Start Button is Clicked");
+		logger.info("Lets Start Button is Clicked");
 	}
 	
 	
@@ -265,7 +265,7 @@ public class TC_Class1 extends Base
 	{
 		custInfo.click_POPUP_cancelButton();
 		System.out.println("Clicked Cancel Button from POPUP");
-		//logger.info("Clicked Cancel Button from POPUP");
+		logger.info("Clicked Cancel Button from POPUP");
 	}
 	
 	@Test(priority = 16)

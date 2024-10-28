@@ -42,7 +42,7 @@ public class Base {
 		
 		UiAutomator2Options options=new UiAutomator2Options();
 		options.setDeviceName("Pixel Tablet API 35");
-		options.setApp("C:\\Users\\Unity\\eclipse-workspace\\Revords\\src\\test\\resources\\StoreApp.apk");
+		options.setApp("C:\\Users\\Unity\\git\\repository\\Revords\\src\\test\\resources\\StoreApp.apk");
 		 driver=new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(),options);
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
@@ -56,7 +56,7 @@ public class Base {
 		
 		UiAutomator2Options options=new UiAutomator2Options();
 		options.setDeviceName("Pixel Tablet API 35");
-		options.setApp("C:\\Users\\Unity\\eclipse-workspace\\Revords\\src\\test\\resources\\CustomerApp.apk");
+		options.setApp("C:\\Users\\Unity\\git\\repository\\Revords\\src\\test\\resources\\CustomerApp.apk");
 		//options.setCapability("orientation","LANDSCAPE");
 		 driver=new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(),options);
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

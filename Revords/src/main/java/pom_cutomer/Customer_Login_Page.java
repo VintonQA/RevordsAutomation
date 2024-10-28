@@ -31,7 +31,7 @@ public class Customer_Login_Page
 	{
 		wait=new WebDriverWait(driver,Duration.ofSeconds(90));
 		wait.until(ExpectedConditions.elementToBeClickable(userName));
-		userName.sendKeys("fortunesstreamwoodcustomer");
+		userName.sendKeys("betsycafecustomer");
 	}
 	
 	public void enter_Password()

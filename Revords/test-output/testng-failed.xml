@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases_customer.TC_Class1">
+      <class name="testcases_customer.TC_Class2">
         <methods>
+          <include name="visibility_TermsANDConditions"/>
+          <include name="verify_Cust_SignIn_with_New_MobileNumber_10_Digit"/>
+          <include name="verify_Customer_SignIn_with_9_Digit_MobileNumber"/>
+          <include name="verify_CustoerAppLogin_with_Wrong_Credentials"/>
+          <include name="verify_APP_is_Installed"/>
+          <include name="clickability_TermsANDConditions"/>
+          <include name="verify_CustomerAppLogin_with_Valid_Credentials"/>
           <include name="startup"/>
-          <include name="close"/>
-          <include name="verify_YES_NO_Button_InformationPage"/>
+          <include name="verify_promotionalMessage_POPUP"/>
         </methods>
-      </class> <!-- testcases_customer.TC_Class1 -->
+      </class> <!-- testcases_customer.TC_Class2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
