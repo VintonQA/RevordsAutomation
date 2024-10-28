@@ -17,7 +17,7 @@ public class Customer_Info_Page extends Base
 	AndroidDriver driver;
 	WebDriverWait wait;
 	
-	@AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"name\")")private WebElement custName;
+	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(0)")private WebElement custName;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(1)")private WebElement cust_EmailID;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.TextView\").instance(5)")private WebElement cust_birthMonth;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.TextView\").instance(6)")private WebElement cust_birthDate;

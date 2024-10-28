@@ -1,7 +1,7 @@
 package base;
 
 import java.io.File;
-
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -180,5 +180,34 @@ public class Base {
 	            }
 	        }
 	    }
+	    
+	    public void enablingWifi() {
+	        try {
+	            // Execute the ADB command to enable Wi-Fi
+	            Process process = Runtime.getRuntime().exec(new String[]{"adb", "shell", "svc", "wifi", "enable"});
+	            int exitCode = process.waitFor(); // Wait for the command to complete
+	            if (exitCode == 0) {
+	                System.out.println("Wi-Fi has been enabled.");
+	            } else {
+	                System.err.println("Failed to enable Wi-Fi. Exit code: " + exitCode);
+	            }
+	        } catch (IOException e) {
+	            System.err.println("IO error while enabling Wi-Fi: " + e.getMessage());
+	            e.printStackTrace();
+	        } catch (InterruptedException e) {
+	            System.err.println("Process was interrupted: " + e.getMessage());
+	            Thread.currentThread().interrupt(); // Restore interrupted status
+	        }
+	    }
+	    
+	    public  void disablingWifi() {
+            try {
+                // Execute the ADB command to disable WiFi
+                Runtime.getRuntime().exec(new String[]{"adb", "shell", "svc wifi disable"});
+                System.out.println("WiFi has been disabled.");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+     }
 
 }

@@ -29,10 +29,11 @@ public class Customer_Dashboard_Page
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.view.View\").instance(9)")private WebElement enterButton;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.Image\").instance(6)")private WebElement deleteButton;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"By signing up, you agree to receive occasional updates and promotions via text message and to our\")") private WebElement termsTextDashboardPage;
-	@AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"open-modal\")")private WebElement TermsAndPrivacyPolicy;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\" Terms & Privacy Policy.\")")private WebElement TermsAndPrivacyPolicy;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Terms & Privacy Policy\")")private WebElement privacyPageTitle;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"cancel\")")private WebElement closePrivacyPage;
-	
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"You're already signed in!\")")private WebElement alreadysignedinCustomer;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"TERMS OF USE AGREEMENT FOR REVORDS LLC\")")private WebElement termsofuseAgreement;
 	public Customer_Dashboard_Page(AndroidDriver driver)
 	{
 		this.driver=driver;
@@ -147,6 +148,20 @@ public class Customer_Dashboard_Page
 	public void close_privacypage()
 	{
 		closePrivacyPage.click();
+	}
+	
+	public String alreadysignedinCustomer()
+	{
+		String text1=alreadysignedinCustomer.getText();
+		return text1;
+	}
+	
+	public String verify_termsPageText()
+	{
+		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait.until(ExpectedConditions.elementToBeClickable(termsofuseAgreement));
+		String actualTermsText=termsofuseAgreement.getText();
+		return actualTermsText;
 	}
 	
 }

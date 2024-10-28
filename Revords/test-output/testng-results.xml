@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-25T15:02:43 IST" name="Default suite" finished-at="2024-10-25T15:03:28 IST" duration-ms="45564">
+  <suite started-at="2024-10-28T18:20:32 IST" name="Default suite" finished-at="2024-10-28T18:21:40 IST" duration-ms="68002">
     <groups>
     </groups>
-    <test started-at="2024-10-25T15:02:43 IST" name="Default test" finished-at="2024-10-25T15:03:28 IST" duration-ms="45564">
-      <class name="testcases_customer.TC_Class2">
-        <test-method is-config="true" signature="startup()[pri:0, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:02:43 IST" name="startup" finished-at="2024-10-25T15:02:56 IST" duration-ms="12906" status="PASS">
+    <test started-at="2024-10-28T18:20:32 IST" name="Default test" finished-at="2024-10-28T18:21:40 IST" duration-ms="68002">
+      <class name="testcases_store.TC_Class4">
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:20:32 IST" name="startup" finished-at="2024-10-28T18:20:44 IST" duration-ms="11580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="verify_APP_is_Installed()[pri:0, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:02:56 IST" name="verify_APP_is_Installed" finished-at="2024-10-25T15:02:56 IST" duration-ms="111" status="PASS">
+        <test-method signature="login()[pri:0, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:20:44 IST" name="login" finished-at="2024-10-28T18:20:50 IST" duration-ms="5857" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_APP_is_Installed -->
-        <test-method signature="verify_CustoerAppLogin_with_Wrong_Credentials()[pri:1, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:02:56 IST" name="verify_CustoerAppLogin_with_Wrong_Credentials" finished-at="2024-10-25T15:03:01 IST" duration-ms="5448" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="disablewifi()[pri:1, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:20:50 IST" name="disablewifi" finished-at="2024-10-28T18:21:00 IST" duration-ms="10015" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_CustoerAppLogin_with_Wrong_Credentials -->
-        <test-method signature="verify_CustomerAppLogin_with_Valid_Credentials()[pri:2, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:03:01 IST" name="verify_CustomerAppLogin_with_Valid_Credentials" finished-at="2024-10-25T15:03:05 IST" duration-ms="3240" status="PASS">
+        </test-method> <!-- disablewifi -->
+        <test-method signature="pressBackButton_Lostwifi()[pri:2, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:21:00 IST" name="pressBackButton_Lostwifi" finished-at="2024-10-28T18:21:00 IST" depends-on-methods="testcases_store.TC_Class4.disablewifi" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_CustomerAppLogin_with_Valid_Credentials -->
-        <test-method signature="verify_Customer_SignIn_with_9_Digit_MobileNumber()[pri:3, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:03:05 IST" name="verify_Customer_SignIn_with_9_Digit_MobileNumber" finished-at="2024-10-25T15:03:16 IST" duration-ms="11325" status="PASS">
+        </test-method> <!-- pressBackButton_Lostwifi -->
+        <test-method signature="enablewifi()[pri:3, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:21:00 IST" name="enablewifi" finished-at="2024-10-28T18:21:10 IST" duration-ms="10123" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Customer_SignIn_with_9_Digit_MobileNumber -->
-        <test-method signature="visibility_TermsANDConditions()[pri:4, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:03:16 IST" name="visibility_TermsANDConditions" finished-at="2024-10-25T15:03:16 IST" duration-ms="216" status="PASS">
+        </test-method> <!-- enablewifi -->
+        <test-method signature="click_homeTab_After_Connection_Restore()[pri:4, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:21:10 IST" name="click_homeTab_After_Connection_Restore" finished-at="2024-10-28T18:21:15 IST" duration-ms="4964" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- visibility_TermsANDConditions -->
-        <test-method signature="clickability_TermsANDConditions()[pri:5, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:03:16 IST" name="clickability_TermsANDConditions" finished-at="2024-10-25T15:03:18 IST" duration-ms="1449" status="PASS">
+        </test-method> <!-- click_homeTab_After_Connection_Restore -->
+        <test-method signature="disablewifi2()[pri:5, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:21:15 IST" name="disablewifi2" finished-at="2024-10-28T18:21:25 IST" duration-ms="10009" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickability_TermsANDConditions -->
-        <test-method signature="verify_Cust_SignIn_with_New_MobileNumber_10_Digit()[pri:6, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:03:18 IST" name="verify_Cust_SignIn_with_New_MobileNumber_10_Digit" finished-at="2024-10-25T15:03:26 IST" duration-ms="8280" status="PASS">
+        </test-method> <!-- disablewifi2 -->
+        <test-method signature="pressBackButton_Lostwifi2()[pri:6, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:21:25 IST" name="pressBackButton_Lostwifi2" finished-at="2024-10-28T18:21:25 IST" depends-on-methods="testcases_store.TC_Class4.disablewifi2" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Cust_SignIn_with_New_MobileNumber_10_Digit -->
-        <test-method signature="verify_promotionalMessage_POPUP()[pri:7, instance:testcases_customer.TC_Class2@7a419da4]" started-at="2024-10-25T15:03:26 IST" name="verify_promotionalMessage_POPUP" finished-at="2024-10-25T15:03:28 IST" duration-ms="2527" status="PASS">
+        </test-method> <!-- pressBackButton_Lostwifi2 -->
+        <test-method signature="enablewifi2()[pri:7, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:21:25 IST" name="enablewifi2" finished-at="2024-10-28T18:21:35 IST" duration-ms="10119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_promotionalMessage_POPUP -->
-      </class> <!-- testcases_customer.TC_Class2 -->
+        </test-method> <!-- enablewifi2 -->
+        <test-method signature="click_historyTab_After_Connection_Restore()[pri:8, instance:testcases_store.TC_Class4@3d5c822d]" started-at="2024-10-28T18:21:35 IST" name="click_historyTab_After_Connection_Restore" finished-at="2024-10-28T18:21:40 IST" duration-ms="4784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_historyTab_After_Connection_Restore -->
+      </class> <!-- testcases_store.TC_Class4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

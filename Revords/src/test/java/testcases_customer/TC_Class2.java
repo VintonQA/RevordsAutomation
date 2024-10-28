@@ -32,96 +32,29 @@ public class TC_Class2 extends Base
 	}
 	
 	
-	@Test(priority=0)
-	public void verify_APP_is_Installed()
-	{
-		boolean installStatus=isAppInstalled("com.revordscustomer.app");
-		System.out.println("App Installation status :- "+installStatus);
-		//logger.info("App Installation status :- "+installStatus);
-	}
-	
-	@Test(priority = 1)
-	public void verify_CustoerAppLogin_with_Wrong_Credentials()
-	{
-		custLogin=new Customer_Login_Page(driver);
-		custLogin.enter_wrongUserName();
-		System.out.println("WrongUserName Entered");
-		custLogin.enter_Password();
-		System.out.println("WrongPassword Entered");
-		custLogin.click_loginButton();
-		System.out.println("Clicked Login Button");
-		String actualMessage=custLogin.loginPageErrorMessage();
-		String expectedMessage="Please enter valid credentials.";
-		Assert.assertEquals(actualMessage,expectedMessage,"Error Message didn't Matched/Found");
-		System.out.println("Login Failed!!!! Due to invalid credentials");
-		//logger.info("Login Failed!!!! Due to invalid credentials");
-		
-	}
 	
 	@Test(priority = 2)
-	public void verify_CustomerAppLogin_with_Valid_Credentials()
+	public void Customer_Login()
 	{
 		custLogin=new Customer_Login_Page(driver);
 		custLogin.enter_UserName();
 		System.out.println("UserName Entered");
-		//logger.info("UserName Entered");
+		logger.info("UserName Entered");
 		custLogin.enter_Password();
 		System.out.println("Password Entered");
-		//logger.info("Password Entered");
 		custLogin.click_loginButton();
 		System.out.println("Clicked Login Button");
-		//logger.info("Clicked Login Button");
 		custDash=new Customer_Dashboard_Page(driver);
 		boolean status=custDash.number1status();
 		Assert.assertEquals(status,true,"User Has not landed on dashboard");
-		//logger.info("Customer logged in successfully");
 		System.out.println("Customer logged in successfully & Landed on Dashboard");
-		//logger.info("Customer logged in successfully & Landed on Dashboard Page");
+		logger.info("Customer logged in successfully & Landed on Dashboard Page");
 	}
 	
-	@Test(priority = 3)
-	public void verify_Customer_SignIn_with_9_Digit_MobileNumber()
-	{
-		custDash=new Customer_Dashboard_Page(driver);
-		custDash.press_number8();
-		custDash.press_number3();
-		custDash.press_number6();
-		custDash.press_number5();
-		custDash.press_number0();
-		custDash.press_number1();
-		custDash.press_number8();
-		custDash.press_number4();
-		custDash.press_number1();
-		custDash.click_nextButton();
-		boolean status=custDash.verify_dashboardPage();
-		Assert.assertEquals(status,true,"User redirected to Enter Information Page");
-		System.out.println("Customer Unable to SignIn with less then 10 digit mobile number");
-		//logger.info("Customer Unable to SignIn with less then 10 digit mobile number");
-		
-	}
-	
-	@Test(priority = 4)
-	public void visibility_TermsANDConditions()
-	{
-		boolean status=custDash.verify_visibility_of_TermsAndConditions();
-		Assert.assertEquals(status,true);
-		System.out.println("Terms And Conditions link is visible  "+status);
-		//logger.info("Terms And Conditions link is visible  "+status);
-	}
-	
-	@Test(priority = 5)
-	public void clickability_TermsANDConditions()
-	{
-		String TermsPageTitle=custDash.verify_TermsANDCondition_IsClickable();
-		Assert.assertEquals(TermsPageTitle,"Terms & Privacy Policy","Customer not landed on Terms AND Conditions Page");
-		//logger.info("Customer landed on Terms AND Conditions Page");
-		custDash.close_privacypage();
-		//logger.info("Terms and Conditions Page is Closed");
-	}
 	
 	
 	@Test(priority = 6)
-	public void verify_Cust_SignIn_with_New_MobileNumber_10_Digit()
+	public void Existing_Customer_Entering_MobileNumber()
 	{
 		custDash=new Customer_Dashboard_Page(driver);
 		custDash.press_number8();
@@ -131,19 +64,22 @@ public class TC_Class2 extends Base
 		custDash.press_number0();
 		custDash.press_number1();
 		custDash.press_number8();
-		custDash.press_number4();
+		custDash.press_number5();
 		custDash.press_number1();
-		custDash.press_number0();
+		custDash.press_number1();
 		custDash.click_nextButton();
+		logger.info("Existing Customer entered Mobile Number");
 	}
 	
 	@Test(priority = 7)
-	public void verify_promotionalMessage_POPUP()
+	public void verify_Already_Signed_in_Message()
 	{
-		custInfo=new Customer_Info_Page(driver);
-		custInfo.click_yesButtonPromotionalPage();
-		custInfo.click_checkBoxPromotionalPage();
-		custInfo.click_letsStartPromotionalPOPUP();
+		String actualText=custDash.alreadysignedinCustomer();
+		String expectedText="You're already signed in!";
+		Assert.assertEquals(actualText, expectedText,"Text didnt matched TC Failed");
+		logger.info("Customer is already Signed In");
 	}
+	
+	
 	
 }

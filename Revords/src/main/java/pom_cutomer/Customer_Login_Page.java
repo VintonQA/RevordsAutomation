@@ -16,8 +16,8 @@ public class Customer_Login_Page
 	AndroidDriver driver;
 	WebDriverWait wait;
 	
-	@AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"Email\")")private WebElement userName;
-	@AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"pwd\")")private WebElement password;
+	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(0)")private WebElement userName;
+	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(1)")private WebElement password;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Login\")")private WebElement loginButton;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Please enter valid credentials.\")")private WebElement loginPageErrorMessage;
 	
@@ -31,7 +31,7 @@ public class Customer_Login_Page
 	{
 		wait=new WebDriverWait(driver,Duration.ofSeconds(90));
 		wait.until(ExpectedConditions.elementToBeClickable(userName));
-		userName.sendKeys("betsycafecustomer");
+		userName.sendKeys("fortunesstreamwoodstore");
 	}
 	
 	public void enter_Password()

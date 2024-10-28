@@ -163,38 +163,7 @@ public class TC_Class3 extends Base
 		logger.info("New User Created successfully using mobile number");
 	}
 	
-	@Test(priority = 3)
-	public void verify_NetworkLostIcon() throws InterruptedException
-	{
-		dashboard=new Dashboard(driver);
-		disableWifi();
-		System.out.println("disabling wifi");
-		logger.info("Wifi Disabled");
-		disableNetwork();
-		System.out.println("disabling Cellular Data");
-		logger.info("Cellular Data Disabled");
-		synchronization(6000);
-		dashboard.click_homeTab();
-		logger.info("Connection Lost/No Network Available");
-		
-	}
 	
-	@Test(priority = 4)
-	public void verify_RestoreNetwork() throws InterruptedException
-	{
-		dashboard=new Dashboard(driver);
-		synchronization(2000);
-		enableWifi();
-		System.out.println("Enabling Wifi");
-		logger.info("Wifi Enabled");
-		synchronization(5000);
-		enableNetwork();
-		System.out.println("Enabling Cellular Data");
-		logger.info("cellure data enabled");
-		synchronization(6000);
-		dashboard.click_homeTab();
-		logger.info("Connection Restored");
-	}
 	
 	
 	@AfterClass

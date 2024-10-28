@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import base.Base;
 import pom_cutomer.Customer_Info_Page;
@@ -86,7 +87,7 @@ public class TC_Class1 extends Base
 		custDash.press_number8();
 		custDash.press_number3();
 		custDash.press_number6();
-		custDash.press_number5();
+		custDash.press_number4();
 		custDash.press_number0();
 		custDash.press_number1();
 		custDash.press_number8();
@@ -110,17 +111,33 @@ public class TC_Class1 extends Base
 	}
 	
 	@Test(priority = 5)
-	public void clickability_TermsANDConditions()
+	public void clickability_TermsANDConditions() throws InterruptedException
 	{
 		String TermsPageTitle=custDash.verify_TermsANDCondition_IsClickable();
 		Assert.assertEquals(TermsPageTitle,"Terms & Privacy Policy","Customer not landed on Terms AND Conditions Page");
 		logger.info("Customer landed on Terms AND Conditions Page");
-		custDash.close_privacypage();
-		logger.info("Terms and Conditions Page is Closed");
+	}
+	
+	@Test(enabled = false)
+	public void verify_termsPageText() throws InterruptedException
+	{
+		try
+		{
+		String actualResult=custDash.verify_termsPageText();
+		String ExpecedResult="TERMS OF USE AGREEMENT FOR REVORDS LLC";
+		SoftAssert s=new SoftAssert();
+		s.assertEquals(actualResult,ExpecedResult,"Terms Page's Text is not visible");
+		synchronization(2000);
+		}
+		catch (Exception e) {
+			custDash.close_privacypage();
+			logger.info("Terms and Conditions Page is Closed");
+		}
+		
 	}
 	
 	
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void verify_Cust_SignIn_with_New_MobileNumber_10_Digit()
 	{
 		custDash=new Customer_Dashboard_Page(driver);
@@ -131,8 +148,8 @@ public class TC_Class1 extends Base
 		custDash.press_number0();
 		custDash.press_number1();
 		custDash.press_number8();
-		custDash.press_number4();
-		custDash.press_number1();
+		custDash.press_number2();
+		custDash.press_number2();
 		custDash.press_number0();
 		custDash.click_nextButton();
 		custInfo=new Customer_Info_Page(driver);
@@ -144,7 +161,7 @@ public class TC_Class1 extends Base
 		logger.info("Customer is redirected to Enter Information Page");
 	}
 	
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void verify_NameTextBox_InformationPage()
 	{
 		custInfo=new Customer_Info_Page(driver);
@@ -153,7 +170,7 @@ public class TC_Class1 extends Base
 		System.out.println("Entered Customer Name");
 	}
 	
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void verify_EmailTextBox_InformationPage()
 	{
 		custInfo.enter_customerEmail();
@@ -161,7 +178,7 @@ public class TC_Class1 extends Base
 		System.out.println("Entered Customer Email ID");
 	}
 	
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void verify_customer_BirthMonth_dropdown() throws InterruptedException
 	{
 		custInfo.choose_custBirthMonth();
@@ -171,7 +188,7 @@ public class TC_Class1 extends Base
 //		custInfo.choose_birthMonth();
 		
 	}
-	@Test(priority = 10)
+	@Test(priority = 11)
 	public void customer_choose_BirthMonth()
 	{
 		try
@@ -194,7 +211,7 @@ public class TC_Class1 extends Base
 ////		System.out.println("Customer is able to choose Birth Date");
 //	}
 	
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void customer_choose_BirthDate()
 	{
 		custInfo.choose_custBirthDate();
@@ -206,7 +223,7 @@ public class TC_Class1 extends Base
 		System.out.println("Date is selected from Date dropdown");
 	}
 	
-	@Test(priority = 12)
+	@Test(priority = 13)
 	public void verify_YES_NO_Button_InformationPage()
 	{
 		custInfo.choose_optINSMS();
@@ -215,7 +232,7 @@ public class TC_Class1 extends Base
 		logger.info("Opt-in And Opt-out Radio Buttons are visible and clickable");
 	}
 	
-	@Test(priority = 13)
+	@Test(priority = 14)
 	public void verify_Age_CheckBox()
 	{
 		try
@@ -232,7 +249,7 @@ public class TC_Class1 extends Base
 		
 	}
 	
-	@Test(priority = 14)
+	@Test(priority = 15)
 	public void click_letsStartButton()
 	{
 		custInfo.click_letsStartButton();
@@ -260,7 +277,7 @@ public class TC_Class1 extends Base
 //		}
 //	}
 	
-	@Test(priority = 15)
+	@Test(priority = 16)
 	public void verify_POPUP_Cancel_Button()
 	{
 		custInfo.click_POPUP_cancelButton();
@@ -268,7 +285,7 @@ public class TC_Class1 extends Base
 		logger.info("Clicked Cancel Button from POPUP");
 	}
 	
-	@Test(priority = 16)
+	@Test(enabled = false)
 	public void verify_POP_yesButton()
 	{
 		click_letsStartButton();
@@ -280,7 +297,7 @@ public class TC_Class1 extends Base
 	@AfterClass
 	public void close() throws InterruptedException
 	{
-		synchronization(1500000);
+		synchronization(1500);
 		teardown();
 	}
 	

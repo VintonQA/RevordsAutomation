@@ -55,7 +55,7 @@ public class Dashboard extends Base
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[22]")private WebElement userSummaryNewTotal;
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[9]")private WebElement userSummaryusername;
 	@AndroidFindBy(xpath = "//android.webkit.WebView[@text=\"Revords Store\"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]")private WebElement dashboardfirstuserafterclickonit;
-	
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"back-button\")")private WebElement networkLostbackButton;
 	
 	public Dashboard(AndroidDriver driver)
 	{
@@ -283,6 +283,17 @@ public class Dashboard extends Base
 		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
 		wait.until(ExpectedConditions.elementToBeClickable(dashboardfirstuserafterclickonit));
 		dashboardfirstuserafterclickonit.click();
+	}
+	
+	public boolean check_network_Lost_BackButton()
+	{
+		boolean status=networkLostbackButton.isDisplayed();
+		return status;
+	}
+	
+	public void click_network_Lost_BackButton()
+	{
+		networkLostbackButton.click();
 	}
 	
 }
