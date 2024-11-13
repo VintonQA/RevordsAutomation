@@ -72,7 +72,7 @@ public class TC_Class2 extends Base
 		}
 		catch (Exception e) {
 			System.out.println("UserName/Password are incorrect");
-			logger.info("Login Unsuccessfull !!!! TC Failed");
+			logger.error("Login Unsuccessfull !!!! TC Failed");
 		}
 		
 	}
@@ -93,11 +93,62 @@ public class TC_Class2 extends Base
 		catch(Exception e)
 		{
 			System.out.println("User Not Redirected to Dashboard.TC Failed!!!!");
-			logger.info("User Not Redirected to Dashboard.TC Failed!!!!");
+			logger.error("User Not Redirected to Dashboard.TC Failed!!!!");
 		}
 	}
 	
+	
+	
 	@Test(priority = 2)
+	public void verify_UserSessionTime()
+	{
+		dashboard=new Dashboard(driver);
+		
+		String Fuser=dashboard.dashboard_firstUserName();
+		//System.out.println(Fuser);
+		try
+		{
+		String sessionTime=dashboard.dashboard_userSessionTime();
+		System.out.println(Fuser+"'s Session Time is :- "+sessionTime);
+		logger.info(Fuser+"'s Session Time is :- "+sessionTime);
+		}
+		catch (Exception e) {
+			System.out.println("Couldn't find any session time");
+			logger.error("Couldn't Find any session time");
+		}
+		
+	}
+	
+	@Test(priority = 3)
+	public void verify_customerPageRedeemButtom()
+	{
+		dashboard.click_dashboardFirstUser();
+		WebElement redeemButton = dashboard.customerPage_redeemButtom();
+		boolean status = redeemButton.isEnabled();
+		System.out.println("Redeem Button Enabled status before selection of Reward/Promotion/Autopilot : - "+status);
+		logger.info("Redeem Button Enabled status before selection of Reward/Promotion/Autopilot : - "+status);
+		dashboard.customerPage_RewardField();
+		WebElement redeemButtonNewStatus = dashboard.customerPage_redeemButtom();
+		boolean status2 = redeemButtonNewStatus.isEnabled();
+		System.out.println("Redeem Button Enabled Status after Selection of Reward/Promotion/Autopilot : - "+status2);
+		logger.info("Redeem Button Enabled Status after Selection of Reward/Promotion/Autopilot : - "+status2);
+	}
+	
+	@Test(priority = 4)
+	public void verify_redemptionPOPUPonCustomerPage()
+	{
+		WebElement redeemButton = dashboard.customerPage_redeemButtom();
+		redeemButton.click();
+		boolean yesButttonStatus = dashboard.redemptionPOPUP_yesButton();
+		System.out.println("Redeem POPUP Yes Button visibility :- "+yesButttonStatus);
+		logger.info("Redeem POPUP Yes Button visibility :- "+yesButttonStatus);
+		boolean noButtonStatus = dashboard.redemptionPOPUP_noButton();
+		System.out.println("Redeem POPUP No Button visibility :- "+noButtonStatus);
+		logger.info("Redeem POPUP No Button visibility :- "+noButtonStatus);
+		
+	}
+	
+	@Test(priority = 5)
 	public void rewards_visibilty()
 	{
 		
@@ -111,14 +162,14 @@ public class TC_Class2 extends Base
 		}
 		catch (Exception e)
 		{
-			logger.info("Couldnt Found any Rewards on dashboard");
+			logger.error("Couldnt Found any Rewards on dashboard");
 			System.out.println("Couldnt Found any Rewards on dashboard");
 			
 		}
 		
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 6)
 	public void verify_Navigation() throws InterruptedException
 	{
 		dashboard=new Dashboard(driver);
@@ -137,7 +188,7 @@ public class TC_Class2 extends Base
 		catch (Exception e) 
 		{
 			System.out.println("Unable to locate Search User Text Field");
-			logger.info("Unable to locate Search User Text Field");
+			logger.error("Unable to locate Search User Text Field");
 		}
 		
 		dashboard.click_NewUserTab();
@@ -149,7 +200,7 @@ public class TC_Class2 extends Base
 		
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 7)
 	public void Verify_User_Details() throws InterruptedException
 	{
 		dashboard=new Dashboard(driver);
@@ -184,14 +235,14 @@ public class TC_Class2 extends Base
 		}
 		catch (Exception e) {
 			System.out.println("User's Details Are Not Visible"); 
-			logger.info("User's Details Are Not Visible");
+			logger.error("User's Details Are Not Visible");
 			
 		}
 		
 		
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 8)
 	public void Add_NewUser() throws InterruptedException
 	{
 		dashboard.click_NewUserTab();
@@ -210,21 +261,26 @@ public class TC_Class2 extends Base
 		catch (Exception e)
 		{
 			System.out.println("Guest User not Added!!! Need to delete existing Guest user first");
-			logger.info("Guest User not Added!!! Need to delete existing Guest user first");
+			logger.error("Guest User not Added!!! Need to delete existing Guest user first");
 		}
 		
 		
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 9)
 	public void verify_UserSignout_And_Verify_SummaryPage_Details() throws InterruptedException
 	{
 		dashboard=new Dashboard(driver);
+		try
+		{
 		synchronization(4000);
 		dashboard.click_homeTab();
+		System.out.println("Clicked home tab");
 		dashboard.user_click();
+		System.out.println("Clicked User");
 		synchronization(4000);
 		dashboard.click_UserSignout();
+		System.out.println("Clicked signout");
 		String userName=dashboard.get_UserSummaryUserName();
 		System.out.println("User Name is :- "+userName);
 		logger.info("User Name is :- "+userName);
@@ -241,10 +297,16 @@ public class TC_Class2 extends Base
 		dashboard.Click_SignoutConfirmYes();
 		System.out.println("User Signout SuccessFully");
 		logger.info("User Signout SuccessFully");
+		}
+		catch (Exception e) {
+			System.out.println("Unable to Signout the User, Test Case failed");
+			logger.error("Unable to Signout the User, Test Case failed");
+			e.printStackTrace();
+		}
 	}
 	
 	
-	@Test(priority = 7)
+	@Test(priority = 10)
 	public void verify_alreadySigninCustomer()
 	{
 		dashboard=new Dashboard(driver);
@@ -255,12 +317,13 @@ public class TC_Class2 extends Base
 		dashboard.click_dashboardfirstuserafterfirstclick();
 		}
 		catch (Exception e) {
-			System.out.println("Unable to find th user list for verify_alreadySigninCustomer");
+			System.out.println("Unable to find the user list for verify_alreadySigninCustomer");
+			logger.error("Unable to find the user list for verify_alreadySigninCustomer");
 		}
 		
 	}
 	
-	@Test(priority = 8)
+	@Test(priority = 11)
 	public void verify_detailsOnSettingPage()
 	{
 		dashboard=new Dashboard(driver);
@@ -279,24 +342,60 @@ public class TC_Class2 extends Base
 		String appVersionExpected="App Version : 0.0.15";
 		//Assert.assertEquals(appVersionActual,appVersionExpected,"App version Didn't Matched!!! TC Failed");
 		Reporter.log("App Version Found:- "+appVersionActual);
+		logger.info("App Version Found:- "+appVersionActual);
 		}
 		catch (Exception e) 
 		{
 			Reporter.log("Page not loaded properly, TC Failed");
+			logger.error("Setting Page is not loaded properly, TC Failed");
 			
 		}
 		
 		
 	}
 	
-	@Test(priority = 9)
-	public void verify_DateFilter_HistoryPage() throws InterruptedException
+	@Test(priority = 12)
+	public void verify_PromotionRedeemCount_on_HistoryPage()
 	{
-		try
-		{
 		dashboard=new Dashboard(driver);
 		dashboard.clickHistory();
 		historyPage=new History_Page(driver);
+		String promotionCount=historyPage.get_promotionCount();
+		System.out.println("Promotion Redeem value is :- "+promotionCount);
+		logger.info("Promotion Redeem value is :- "+promotionCount);
+	}
+	
+	@Test(priority = 13)
+	public void verify_AutoCampaignsRedeemed_on_HistoryPage()
+	{
+		String autocampaignCount=historyPage.get_autocampaignCount();
+		System.out.println("AutoCampaignsRedeemed value is :- "+autocampaignCount);
+		logger.info("AutoCampaignsRedeemed value is :- "+autocampaignCount);
+	}
+	
+	@Test(priority = 14)
+	public void verify_RewardsRedeemed_on_HistoryPage()
+	{
+		String rewardsRedeems=historyPage.get_rewardReedemCount();
+		System.out.println("RewardsRedeems value is :- "+rewardsRedeems);
+		logger.info("RewardsRedeems value is :- "+rewardsRedeems);
+	}
+	
+	@Test(priority = 15)
+	public void verify_PointsEarned_on_HistoryPage()
+	{
+		String pointsEarned=historyPage.get_pointEarnedCount();
+		System.out.println("PointsEarned value is :- "+pointsEarned);
+		logger.info("PointsEarned value is :- "+pointsEarned);
+	}
+	
+	
+	
+	@Test(priority = 16)
+	public void verify_DateFilterAndActivityFilter_HistoryPage() throws InterruptedException
+	{
+		try
+		{
 		historyPage.click_last7daydropdown();
 		System.out.println("Dropdown is visible and Clicked Successfully");
 		historyPage.click_allactivityDropdown();
@@ -304,17 +403,41 @@ public class TC_Class2 extends Base
 		}
 		catch (Exception e) {
 			System.out.println("Both Date and activity Dropdown are not interactable, TC Failed");
-			logger.info("Both Date and activity Dropdown are not interactable, TC Failed");
+			logger.error("Both Date and activity Dropdown are not interactable, TC Failed");
 		}
 		
 		
 	}
 	
+//	@Test(priority = 1)
+//	public void listcheck()
+//	{
+//		dashboard=new Dashboard(driver);
+//		List<WebElement> list = dashboard.userslist();
+//		if (list != null && !list.isEmpty()) {
+//	        for (WebElement a : list) {
+//	            try {
+//	                // Print the text of each element
+//	                String elementText = a.getTagName();
+//	                System.out.println("Element text: " + elementText);
+//	                
+//	                // Optional: You can add assertions here if necessary
+//	                // Assert.assertNotNull(elementText, "Text is null!");
+//	                
+//	            } catch (Exception e) {
+//	                System.err.println("Error while getting text of element: " + e.getMessage());
+//	            }
+//	        }
+//	    } else {
+//	        System.out.println("The users list is empty or null.");
+//	    }
+//	}
+	
 	
 	@AfterClass
 	public void close() throws InterruptedException
 	{
-		synchronization(15000);
+		synchronization(150000);
 		teardown();
 	}
 	

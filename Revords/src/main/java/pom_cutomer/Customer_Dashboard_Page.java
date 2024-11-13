@@ -31,9 +31,12 @@ public class Customer_Dashboard_Page
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"By signing up, you agree to receive occasional updates and promotions via text message and to our\")") private WebElement termsTextDashboardPage;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\" Terms & Privacy Policy.\")")private WebElement TermsAndPrivacyPolicy;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Terms & Privacy Policy\")")private WebElement privacyPageTitle;
-	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"cancel\")")private WebElement closePrivacyPage;
+	@AndroidFindBy(xpath = "//android.widget.Image[@text=\"cancel\"]")private WebElement closePrivacyPage;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"You're already signed in!\")")private WebElement alreadysignedinCustomer;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"TERMS OF USE AGREEMENT FOR REVORDS LLC\")")private WebElement termsofuseAgreement;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"back-button\")")private WebElement backButtonNetworkLost;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Instantly redeem points at the store.\")")private WebElement dashboardPageElement;
+	
 	public Customer_Dashboard_Page(AndroidDriver driver)
 	{
 		this.driver=driver;
@@ -158,10 +161,27 @@ public class Customer_Dashboard_Page
 	
 	public String verify_termsPageText()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(termsofuseAgreement));
 		String actualTermsText=termsofuseAgreement.getText();
 		return actualTermsText;
+	}
+	
+	public boolean check_networkLost_Backbutton()
+	{
+		boolean backButtonStatus = backButtonNetworkLost.isDisplayed();
+		return backButtonStatus;
+	}
+	
+	public void click_networkLost_BackButton()
+	{
+		backButtonNetworkLost.click();
+	}
+	
+	public String dashboardElement()
+	{
+		String dashboardText=dashboardPageElement.getText();
+		return dashboardText;
 	}
 	
 }

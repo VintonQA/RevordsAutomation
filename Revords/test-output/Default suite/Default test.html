@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 28 18:20:32 IST 2024</td>
+<td>Started on:</td><td>Tue Nov 12 14:28:42 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>68 seconds (68002 ms)</td>
+<tr><td>Total time:</td><td>176 seconds (176017 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,111 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases_store.TC_Class2.close()'><b>close</b><br>Test class: testcases_store.TC_Class2</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [06a43124-bcea-449e-bb52-4924e8ae437d, quit {}]
+Capabilities {appium:app: C:\Users\Unity\git\reposito..., appium:appPackage: com.revordsstore.app, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Unity\git\reposito..., automationName: UIAutomator2, deviceName: Pixel Tablet API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 15, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 06a43124-bcea-449e-bb52-4924e8ae437d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:435)
+	at base.Base.teardown(Base.java:88)
+	at testcases_store.TC_Class2.close(TC_Class2.java:441)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1638001196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638001196'><pre>org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [06a43124-bcea-449e-bb52-4924e8ae437d, quit {}]
+Capabilities {appium:app: C:\Users\Unity\git\reposito..., appium:appPackage: com.revordsstore.app, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Unity\git\reposito..., automationName: UIAutomator2, deviceName: Pixel Tablet API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 15, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 06a43124-bcea-449e-bb52-4924e8ae437d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:435)
+	at base.Base.teardown(Base.java:88)
+	at testcases_store.TC_Class2.close(TC_Class2.java:441)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>150</td>
+<td>testcases_store.TC_Class2@5403f35f</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,50 +181,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases_store.TC_Class4.pressBackButton_Lostwifi2()'><b>pressBackButton_Lostwifi2</b><br>Test class: testcases_store.TC_Class4</td>
-<td></td>
-<td>0</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
-<tr>
-<td title='testcases_store.TC_Class4.disablewifi()'><b>disablewifi</b><br>Test class: testcases_store.TC_Class4</td>
-<td></td>
-<td>10</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
-<tr>
-<td title='testcases_store.TC_Class4.pressBackButton_Lostwifi()'><b>pressBackButton_Lostwifi</b><br>Test class: testcases_store.TC_Class4</td>
-<td></td>
-<td>0</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
-<tr>
-<td title='testcases_store.TC_Class4.disablewifi2()'><b>disablewifi2</b><br>Test class: testcases_store.TC_Class4</td>
-<td></td>
-<td>10</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
-<tr>
-<td title='testcases_store.TC_Class4.click_homeTab_After_Connection_Restore()'><b>click_homeTab_After_Connection_Restore</b><br>Test class: testcases_store.TC_Class4</td>
-<td></td>
-<td>4</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
-<tr>
-<td title='testcases_store.TC_Class4.enablewifi2()'><b>enablewifi2</b><br>Test class: testcases_store.TC_Class4</td>
-<td></td>
-<td>10</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
-<tr>
-<td title='testcases_store.TC_Class4.login()'><b>login</b><br>Test class: testcases_store.TC_Class4</td>
+<td title='testcases_store.TC_Class2.listcheck()'><b>listcheck</b><br>Test class: testcases_store.TC_Class2</td>
 <td></td>
 <td>5</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
+<td>testcases_store.TC_Class2@5403f35f</td></tr>
 <tr>
-<td title='testcases_store.TC_Class4.click_historyTab_After_Connection_Restore()'><b>click_historyTab_After_Connection_Restore</b><br>Test class: testcases_store.TC_Class4</td>
+<td title='testcases_store.TC_Class2.login_Verify()'><b>login_Verify</b><br>Test class: testcases_store.TC_Class2</td>
 <td></td>
-<td>4</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
-<tr>
-<td title='testcases_store.TC_Class4.enablewifi()'><b>enablewifi</b><br>Test class: testcases_store.TC_Class4</td>
-<td></td>
-<td>10</td>
-<td>testcases_store.TC_Class4@3d5c822d</td></tr>
+<td>5</td>
+<td>testcases_store.TC_Class2@5403f35f</td></tr>
 </table><p>
 </body>
 </html>

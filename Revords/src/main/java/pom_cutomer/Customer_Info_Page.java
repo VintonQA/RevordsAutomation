@@ -37,6 +37,18 @@ public class Customer_Info_Page extends Base
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.Image\").instance(1)")private WebElement checkboxPromotionalPOPUP;
 	@AndroidFindBy(xpath = "//android.widget.Button[@text=\"Let's Start\"]")private WebElement letsStartButtonPromotionalPOPUP;
 	@AndroidFindBy(xpath = "//android.widget.Button[@text=\"Continue \"]")private WebElement finalContinueButton;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"SPIN\")")private WebElement spinwheel;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Congratulations you have earned\")")private WebElement messegeAfterSpin;
+	@AndroidFindBy(xpath = "(//android.widget.TextView)[11]")private WebElement spinreward;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Continue\")")private WebElement continueButtonSpinwheel;
+	@AndroidFindBy(xpath = "(//android.widget.TextView)[70]")private WebElement rewardATSpinPage;
+	@AndroidFindBy(xpath = "(//android.widget.TextView)[6]")private WebElement customerbalanceRevordSummaryPage;
+	@AndroidFindBy(xpath = "(//android.widget.TextView)[15]")private WebElement spinwheelPointsRevordSummaryPage;
+	@AndroidFindBy(xpath = "(//android.widget.TextView)[3]")private WebElement customerNameAtRevordSummarypage;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Continue\")")private WebElement continueButtonAtRevordSummaryPage;
+	@AndroidFindBy(xpath = "(//android.widget.TextView)[15]")private WebElement continuebuttonatRevordSummaryPageIfpointswon;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"likeOutline\")")private WebElement likeButtonNewByRevordsBusinesses;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Done\")")private WebElement doneButtonAtNewbyRevordsBusinesses;
 	
 	
 	
@@ -179,4 +191,72 @@ public class Customer_Info_Page extends Base
 		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
 		wait.until(ExpectedConditions.visibilityOf(finalContinueButton)).click();
 	}
+	
+	public void click_Spinwheel()
+	{
+		spinwheel.click();
+	}
+	
+	public String message_afterSpin()
+	{
+		String spinMessage=messegeAfterSpin.getText();
+		return spinMessage;
+	}
+	
+	public String spin_reward()
+	{
+		String reward=spinreward.getText();
+		return reward;
+	}
+	
+	public String rewardAtSpinPage()
+	{
+		String rewardSpinpage=rewardATSpinPage.getText();
+		return rewardSpinpage;
+	}
+	
+	public void click_ContinueButtonSpinwheel()
+	{
+		continueButtonSpinwheel.click();
+	}
+	
+	public String CustomerBalanceRevordSummaryPage()
+	{
+		String Balance=customerbalanceRevordSummaryPage.getText();
+		return Balance;
+	}
+	
+	public String customerNameAtRevordSummaryPage()
+	{
+		String CustomerNameSummaryPage=customerNameAtRevordSummarypage.getText();
+		return CustomerNameSummaryPage;
+	}
+	
+	public void click_continueButtonAt_RevordSummaryPage()
+	{
+		continueButtonAtRevordSummaryPage.click();
+	}
+	public void clickContinueButtonifpointsWon()
+	{
+		continuebuttonatRevordSummaryPageIfpointswon.click();
+	}
+	
+	public boolean likeButton()
+	{
+		boolean likeButtonStatus = likeButtonNewByRevordsBusinesses.isDisplayed();
+		return likeButtonStatus;
+	}
+	
+	public String spinwheelPointsRevordSummarypage()
+	{
+		String SpinwheelPoints=spinwheelPointsRevordSummaryPage.getText();
+		return SpinwheelPoints;
+	}
+	
+	public void ClickDoneButtonNearbyRevordsBusinessespage()
+	{
+		doneButtonAtNewbyRevordsBusinesses.click();
+	}
+	
+	
 }

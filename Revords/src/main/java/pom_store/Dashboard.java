@@ -1,6 +1,7 @@
 package pom_store;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -21,6 +22,9 @@ public class Dashboard extends Base
 	AndroidDriver driver;
 	WebDriverWait wait;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"defaultUser1\").instance(0)") private WebElement firstUser;
+	@AndroidFindBy(xpath = "(//android.view.View)[26]")private WebElement dashboardFirstuser;
+	@AndroidFindBy(xpath = "(//android.view.View/android.view.View)[15]")private List<WebElement> userslist;
+	@AndroidFindBy(xpath = "(//android.widget.TextView)[14]")private WebElement firstUserSessionTime;
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Home\"]")private WebElement homeTab;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"History\")")private WebElement historyTab;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Reward\").instance(0)") private WebElement reward;
@@ -56,7 +60,14 @@ public class Dashboard extends Base
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[9]")private WebElement userSummaryusername;
 	@AndroidFindBy(xpath = "//android.webkit.WebView[@text=\"Revords Store\"]/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]")private WebElement dashboardfirstuserafterclickonit;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"back-button\")")private WebElement networkLostbackButton;
-	
+	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.view.View\").instance(34)")private WebElement customerPageRewardField;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"REDEEM\")")private WebElement customerPageRedeemButton;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Yes\")")private WebElement customerpageRedeemPOPUPyes;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"No\")")private WebElement customerpageRedeemPOPUPno;
+	//@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.view.View\").instance(76)")private List<WebElement> rewardsHomePage;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Reward\").instance(0)")private WebElement rewardsHomePage;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Spin Wheel\")")private WebElement CustomerspinWheel;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"$5 MatchPlay\").instance(0)")private WebElement customerspinwheelData;
 	public Dashboard(AndroidDriver driver)
 	{
 		this.driver=driver;
@@ -111,9 +122,9 @@ public class Dashboard extends Base
 	
 	public void user_click()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(90));
-		wait.until(ExpectedConditions.elementToBeClickable(userClick));
-		userClick.click();
+//		wait=new WebDriverWait(driver,Duration.ofSeconds(90));
+//		wait.until(ExpectedConditions.elementToBeClickable(dashboardFirstuser)).click();
+		dashboardFirstuser.click();
 	}
 	
 	public void click_homeTab()
@@ -294,6 +305,67 @@ public class Dashboard extends Base
 	public void click_network_Lost_BackButton()
 	{
 		networkLostbackButton.click();
+	}
+	
+	public String dashboard_firstUserName()
+	{
+		String dashbaordFirstUsername=dashboardFirstuser.getText();
+		return dashbaordFirstUsername;
+	}
+	
+	public String dashboard_userSessionTime()
+	{
+		String sessionTime = firstUserSessionTime.getText();
+		return sessionTime;
+	}
+	
+	public void click_dashboardFirstUser()
+	{
+		dashboardFirstuser.click();
+	}
+	
+	public void customerPage_RewardField()
+	{
+		customerPageRewardField.click();
+	}
+	
+	public WebElement customerPage_redeemButtom()
+	{
+		return customerPageRedeemButton;
+	}
+	
+	public boolean redemptionPOPUP_yesButton()
+	{
+		boolean status1 = customerpageRedeemPOPUPyes.isDisplayed();
+		return status1;
+	}
+	
+	public boolean redemptionPOPUP_noButton()
+	{
+		boolean status2 = customerpageRedeemPOPUPno.isDisplayed();
+		return status2;
+	}
+	
+	public String get_rewardsHomePage()
+	{
+		String rewards=rewardsHomePage.getText();
+		return rewards;
+	}
+	
+	public String customer_speenwheel()
+	{
+		String spinwheel=CustomerspinWheel.getText();
+		return spinwheel;
+	}
+	
+	public String getCustomer_spinwheeldata()
+	{
+		String spinwheeldata=customerspinwheelData.getText();
+		return spinwheeldata;
+	}
+	public  List<WebElement> userslist()
+	{
+		return userslist;
 	}
 	
 }

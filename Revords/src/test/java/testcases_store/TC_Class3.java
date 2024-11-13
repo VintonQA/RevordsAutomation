@@ -50,13 +50,10 @@ public class TC_Class3 extends Base
 		
 	}
 	
-
-	
 	@Test(priority = 0)
-	public void verify_userDetailsEdit() throws InterruptedException
+	public void verify_Users_Visibility_On_HistoryPage() throws InterruptedException
 	{
-		try
-		{
+		historyPage=new History_Page(driver);
 		loginPage=new Login_Page(driver);
 		logger.info("Entering UserName");
 		loginPage.enterUserName();
@@ -65,27 +62,33 @@ public class TC_Class3 extends Base
 		loginPage.enterPassword();
 		logger.info("Clicking Login Button");
 		loginPage.clickLogin();
+		logger.info("Clicked login Button");
 		dashboard=new Dashboard(driver);
 		dashboard.clickHistory();
 		System.out.println("Clicked History Tab");
-		dashboard.click_firstUser();
+		historyPage.click_firstUser();
 		System.out.println("Clicked First User in the list");
-		}
-		catch (Exception e) {
-			System.out.println("Something Went Wrong");
-			e.printStackTrace();
-		}
+		
 	}
 	
-	@Test()
-	public void verify_UserEditFromHistoryList() throws InterruptedException
+	@Test(priority = 1)
+	public void verify_SearchField_Visibility_Clickability_HistoryPage()
+	{
+		boolean status = historyPage.click_SearchField();
+		System.out.println("Visibility of search field in history page is :- "+status);
+		
+	}
+	
+	@Test(priority = 2)
+	public void verify_UserEdit_On_History_Page() throws InterruptedException
 	{
 		dashboard=new Dashboard(driver);
 		try
 		{
-			dashboard.clickHistory();
-			dashboard.click_firstUser();
-			historyPage=new History_Page(driver);
+//			dashboard=new Dashboard(driver);
+//			dashboard.clickHistory();
+//			historyPage=new History_Page(driver);
+			historyPage.click_firstUser();
 			historyPage.enter_emailID();
 			System.out.println("Entered User Email ID");
 			historyPage.click_highRoller();
@@ -100,7 +103,7 @@ public class TC_Class3 extends Base
 			System.out.println("Clicked Notes History Close Button");
 			historyPage.click_saveChangeButton();
 			System.out.println("Clicked save Change Button");
-			logger.info("User is editable from Histroy List");
+			//logger.info("User is editable from Histroy List");
 		
 		}
 		catch (NoSuchElementException e) 
@@ -119,7 +122,37 @@ public class TC_Class3 extends Base
 		}
 	}
 	
-	@Test(priority = 2)
+	
+	
+	@Test(priority = 3)
+	public void verify_SpinWheel_Promotiondata_AutopilotData_CustomerPage() throws InterruptedException
+	{
+		try
+		{
+		dashboard.click_dashboardFirstUser();
+		synchronization(2000);
+		System.out.println(dashboard.customer_speenwheel());
+		}
+		catch (Exception e) {
+			System.out.println("Spinwheel/PromotionData/AutopilotData is not Present at customer page");
+			logger.info("Spinwheel/PromotionData/AutopilotData is not Present at customer page");
+		}
+	}
+	
+	@Test(priority = 4)
+	public void verify_SpinwheelData_CustomerPage()
+	{
+		try
+		{
+		String spindata=dashboard.getCustomer_spinwheeldata();
+		System.out.println(spindata);
+		}
+		catch (Exception e) {
+			System.out.println("Spinwheel Data is not Visible!!!");
+		}
+	}
+	
+	@Test(priority = 5)
 	public void Verify_SignupNewUserwith_MobileNumber() throws InterruptedException
 	{
 		dashboard=new Dashboard(driver);
@@ -143,8 +176,8 @@ public class TC_Class3 extends Base
 		logger.info("Mobile Number Entered Successfully");
 		}
 		catch (Exception e) {
-			System.out.println("Unable to enter Mobile Number/ Fields are not visible");
-			logger.info("Unable to enter Mobile Number/ Fields are not visible");
+			System.out.println("user is not editable as it is anonnymous");
+			//logger.info("Unable to edit this user because user is anonnymous");
 		}
 		signupPage.click_continueButton();
 		System.out.println("Clicked Continue Button");
