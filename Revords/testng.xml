@@ -9,8 +9,10 @@
     <class name="testcases_store.TC_Class2"/>
       <class name="testcases_store.TC_Class3"/>
       <class name="testcases_store.TC_Class4"/>
+      <class name="testcases_store.TC_Class5"/>
        <class name="testcases_customer.TC_Class1"/>
        <class name="testcases_customer.TC_Class2"/>
+       <class name="testcases_customer.ExtraTestCases"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

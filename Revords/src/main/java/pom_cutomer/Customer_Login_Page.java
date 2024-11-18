@@ -27,18 +27,18 @@ public class Customer_Login_Page
 		PageFactory.initElements(new AppiumFieldDecorator(driver),this);
 	}
 	
-	public void enter_UserName()
+	public void enter_UserName(String username)
 	{
 		wait=new WebDriverWait(driver,Duration.ofSeconds(90));
 		wait.until(ExpectedConditions.elementToBeClickable(userName));
-		userName.sendKeys("fortunesstreamwoodstore");
+		userName.sendKeys(username);
 	}
 	
-	public void enter_Password()
+	public void enter_Password(String passwd)
 	{
 		wait=new WebDriverWait(driver,Duration.ofSeconds(90));
 		wait.until(ExpectedConditions.elementToBeClickable(password));
-		password.sendKeys("Revords@2024");	
+		password.sendKeys(passwd);	
 	}
 	
 	public void click_loginButton()

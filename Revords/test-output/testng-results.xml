@@ -1,88 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="16" total="18" passed="2" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T14:28:42 IST" name="Default suite" finished-at="2024-11-12T14:31:38 IST" duration-ms="176017">
+  <suite started-at="2024-11-18T12:35:57 IST" name="Default suite" finished-at="2024-11-18T12:36:57 IST" duration-ms="59559">
     <groups>
     </groups>
-    <test started-at="2024-11-12T14:28:42 IST" name="Default test" finished-at="2024-11-12T14:31:38 IST" duration-ms="176017">
-      <class name="testcases_store.TC_Class2">
-        <test-method is-config="true" signature="startup()[pri:0, instance:testcases_store.TC_Class2@5403f35f]" started-at="2024-11-12T14:28:42 IST" name="startup" finished-at="2024-11-12T14:28:57 IST" duration-ms="14688" status="PASS">
+    <test started-at="2024-11-18T12:35:57 IST" name="Default test" finished-at="2024-11-18T12:36:57 IST" duration-ms="59559">
+      <class name="testcases_store.TC_Class3">
+        <test-method is-config="true" signature="startup()[pri:0, instance:testcases_store.TC_Class3@10d307f1]" started-at="2024-11-18T12:35:57 IST" name="startup" finished-at="2024-11-18T12:36:11 IST" duration-ms="13465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startup -->
-        <test-method signature="login_Verify()[pri:0, instance:testcases_store.TC_Class2@5403f35f]" started-at="2024-11-12T14:28:57 IST" name="login_Verify" finished-at="2024-11-12T14:29:03 IST" duration-ms="5864" status="PASS">
+        <test-method signature="verify_Users_Visibility_On_HistoryPage()[pri:0, instance:testcases_store.TC_Class3@10d307f1]" started-at="2024-11-18T12:36:11 IST" name="verify_Users_Visibility_On_HistoryPage" finished-at="2024-11-18T12:36:41 IST" duration-ms="30460" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_Verify -->
-        <test-method signature="listcheck()[pri:1, instance:testcases_store.TC_Class2@5403f35f]" started-at="2024-11-12T14:29:03 IST" name="listcheck" finished-at="2024-11-12T14:29:08 IST" duration-ms="5374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- listcheck -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcases_store.TC_Class2@5403f35f]" started-at="2024-11-12T14:29:08 IST" name="close" finished-at="2024-11-12T14:31:38 IST" duration-ms="150036" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[A session is either terminated or not started
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [06a43124-bcea-449e-bb52-4924e8ae437d, quit {}]
-Capabilities {appium:app: C:\Users\Unity\git\reposito..., appium:appPackage: com.revordsstore.app, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Unity\git\reposito..., automationName: UIAutomator2, deviceName: Pixel Tablet API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 15, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 06a43124-bcea-449e-bb52-4924e8ae437d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [06a43124-bcea-449e-bb52-4924e8ae437d, quit {}]
-Capabilities {appium:app: C:\Users\Unity\git\reposito..., appium:appPackage: com.revordsstore.app, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Unity\git\reposito..., automationName: UIAutomator2, deviceName: Pixel Tablet API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 2560x1600, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 15, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:viewportRect: {height: 1552, left: 0, top: 48, width: 2560}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 06a43124-bcea-449e-bb52-4924e8ae437d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:310)
-at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:435)
-at base.Base.teardown(Base.java:88)
-at testcases_store.TC_Class2.close(TC_Class2.java:441)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        </test-method> <!-- verify_Users_Visibility_On_HistoryPage -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases_store.TC_Class3@10d307f1]" started-at="2024-11-18T12:36:41 IST" name="close" finished-at="2024-11-18T12:36:57 IST" duration-ms="15589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- testcases_store.TC_Class2 -->
+      </class> <!-- testcases_store.TC_Class3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

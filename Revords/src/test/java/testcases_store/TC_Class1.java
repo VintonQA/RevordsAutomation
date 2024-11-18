@@ -23,6 +23,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 import java.io.File;
+import java.io.IOException;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
@@ -58,12 +59,12 @@ public class TC_Class1 extends Base
 	
 	
 	@Test(priority = 1)
-	public void loginTest() throws InterruptedException
+	public void loginTest() throws InterruptedException, IOException
 	{
 		loginPage=new Login_Page(driver);
-		loginPage.enterUserName();
+		loginPage.enterUserName(Base.propertyFileData("UserNameStore1"));
 		Thread.sleep(1500);
-		loginPage.enterPassword();
+		loginPage.enterPassword(Base.propertyFileData("Password"));
 		Thread.sleep(1500);
 		loginPage.clickLogin();
 		Thread.sleep(10000);
@@ -80,12 +81,12 @@ public class TC_Class1 extends Base
 	}
 	
 	@Test(priority = 2)
-	public void HomePageVerify() throws InterruptedException
+	public void HomePageVerify() throws InterruptedException, IOException
 	{
 		loginPage=new Login_Page(driver);
-		loginPage.enterUserName();
+		loginPage.enterUserName(Base.propertyFileData("UserNameStore1"));
 		Thread.sleep(1500);
-		loginPage.enterPassword();
+		loginPage.enterPassword(Base.propertyFileData("Password"));
 		Thread.sleep(1500);
 		loginPage.clickLogin();
 		Thread.sleep(10000);

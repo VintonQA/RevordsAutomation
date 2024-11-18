@@ -17,7 +17,7 @@ public class History_Page extends Base
 	AndroidDriver driver;
 	WebDriverWait wait;
 	
-	@AndroidFindBy(xpath = "(//android.view.View)[37]")private WebElement firstUserHistoryList;
+	
 	@AndroidFindBy(uiAutomator ="new UiSelector().className(\"android.widget.EditText\").instance(2)") private WebElement userEmailid;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(3)")private WebElement usernotes;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.CheckBox\").instance(3)")private WebElement freePlayerRadioButton;
@@ -32,6 +32,7 @@ public class History_Page extends Base
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[11]")private WebElement historypageRewardRedeemCount;
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[12]")private WebElement historypagePointsEarnedCount;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\")")private WebElement serachFieldHistoryPage;
+	@AndroidFindBy(xpath = "(//android.view.View)[37]")private WebElement firstUserHistoryList;
 	
 	public History_Page(AndroidDriver driver)
 	{
@@ -42,8 +43,8 @@ public class History_Page extends Base
 	public void click_firstUser()
 	{
 		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
-		wait.until(ExpectedConditions.elementToBeClickable(serachFieldHistoryPage));
-		firstUserHistoryList.click();
+		wait.until(ExpectedConditions.elementToBeClickable(firstUserHistoryList)).click();;
+		//firstUserHistoryList.click();
 	}
 	
 	public void enter_emailID()

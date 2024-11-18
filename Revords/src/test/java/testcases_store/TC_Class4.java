@@ -1,5 +1,6 @@
 package testcases_store;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 
@@ -37,14 +38,14 @@ public class TC_Class4 extends Base
 	}
 	
 	@Test(priority = 0)
-	public void login() throws InterruptedException
+	public void login() throws InterruptedException, IOException
 	{
 		loginPage=new Login_Page(driver);
 		logger.info("Entering UserName");
-		loginPage.enterUserName();
+		loginPage.enterUserName(Base.propertyFileData("UserNameStore1"));
 		synchronization(1500);
 		logger.info("Entering Password");
-		loginPage.enterPassword();
+		loginPage.enterPassword(Base.propertyFileData("Password"));
 		logger.info("Clicking Login Button");
 		loginPage.clickLogin();
 		synchronization(2000);

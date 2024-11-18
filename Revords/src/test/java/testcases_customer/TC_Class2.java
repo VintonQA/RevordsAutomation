@@ -1,5 +1,6 @@
 package testcases_customer;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 
@@ -34,13 +35,13 @@ public class TC_Class2 extends Base
 	
 	
 	@Test(priority = 2)
-	public void Customer_Login()
+	public void Customer_Login() throws InterruptedException, IOException
 	{
 		custLogin=new Customer_Login_Page(driver);
-		custLogin.enter_UserName();
+		custLogin.enter_UserName(Base.propertyFileData("UserNameCustomer1"));
 		System.out.println("UserName Entered");
 		//logger.info("UserName Entered");
-		custLogin.enter_Password();
+		custLogin.enter_Password(Base.propertyFileData("Password"));
 		System.out.println("Password Entered");
 		custLogin.click_loginButton();
 		System.out.println("Clicked Login Button");

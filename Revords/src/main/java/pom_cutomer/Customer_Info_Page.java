@@ -20,14 +20,19 @@ public class Customer_Info_Page extends Base
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(0)")private WebElement custName;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(1)")private WebElement cust_EmailID;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.TextView\").instance(5)")private WebElement cust_birthMonth;
+	@AndroidFindBy(xpath = "(//android.widget.RadioButton)[7]")private WebElement augustMonthfromdropdown;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.TextView\").instance(6)")private WebElement cust_birthDate;
+	@AndroidFindBy(xpath = "(//android.widget.RadioButton)[7]")private WebElement birthdatefromdropdown;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Yes (opt-in for SMS)\")")private WebElement cust_optInSMS;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"No (opt-out)\")")private WebElement cust_optOutSMS;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.Image\").instance(1)")private WebElement cust_ageCheckBox;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Let's Start\")")private WebElement cust_letstartButton;
+	@AndroidFindBy(xpath = "(//android.widget.Toast)[2]")private WebElement toastMessageforAgeValidation;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Enter Your Information\")")private WebElement informationPageBanner;
-	@AndroidFindBy(xpath = "(//android.widget.RadioGroup/android.widget.RadioButton)[8]")private WebElement augustMonthfromdropdown;
-	@AndroidFindBy(xpath = "(//android.widget.RadioButton)[7]")private WebElement birthdatefromdropdown;
+	
+	//@AndroidFindBy(xpath = "(//android.widget.RadioButton)[7]")private WebElement birthdatefromdropdown;
+	//@AndroidFindBy(xpath = "//android.widget.TextView[@text=\"7\"]")private WebElement birthdatefromdropdown;
+	
 	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"alert-3-hdr\"]")private WebElement popUpforOptOut;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"OK\")")private WebElement okbuttonMonthSelect;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"CANCEL\")")private WebElement popupCancelButton;
@@ -43,12 +48,13 @@ public class Customer_Info_Page extends Base
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Continue\")")private WebElement continueButtonSpinwheel;
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[70]")private WebElement rewardATSpinPage;
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[6]")private WebElement customerbalanceRevordSummaryPage;
-	@AndroidFindBy(xpath = "(//android.widget.TextView)[15]")private WebElement spinwheelPointsRevordSummaryPage;
+	@AndroidFindBy(xpath = "(//android.widget.TextView)[13]")private WebElement spinwheelPointsRevordSummaryPage;
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[3]")private WebElement customerNameAtRevordSummarypage;
-	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Continue\")")private WebElement continueButtonAtRevordSummaryPage;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Continue\")")private WebElement continueButtonAtRevordSummaryPagePremiumGift;
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[15]")private WebElement continuebuttonatRevordSummaryPageIfpointswon;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"likeOutline\")")private WebElement likeButtonNewByRevordsBusinesses;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Done\")")private WebElement doneButtonAtNewbyRevordsBusinesses;
+	
 	
 	
 	
@@ -60,56 +66,65 @@ public class Customer_Info_Page extends Base
 	
 	public void enter_CustomerName()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(custName)).click();
 		custName.sendKeys("piyush");
 	}
 	
-	public void enter_customerEmail()
+	public void enter_customerEmail(String email)
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(cust_EmailID)).click();
-		cust_EmailID.sendKeys("piyushdantani9195@gmail.com");
+		cust_EmailID.sendKeys(email);
 	}
 	
 	public void choose_custBirthMonth()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(cust_birthMonth)).click();
+		
+	}
+	
+	public void choose_birthMonth()
+	{
+		wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(augustMonthfromdropdown)).click();
+		//augustMonthfromdropdown.click();
+		okbuttonMonthSelect.click();
 		
 	}
 	
 	public void choose_custBirthDate()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(cust_birthDate)).click();
 		
 	}
 	
 	public void choose_optINSMS()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(cust_optInSMS)).click();
 		
 	}
 	
 	public void choose_optOutSMS()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(cust_optOutSMS)).click();
 		
 	}
 	
 	public void check_custAgeCheckBox()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(cust_ageCheckBox)).click();
 		
 	}
 	
 	public void click_letsStartButton()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(cust_letstartButton)).click();
 		
 	}
@@ -120,24 +135,18 @@ public class Customer_Info_Page extends Base
 		return bannerText;
 	}
 	
-	public void choose_birthMonth()
-	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
-		wait.until(ExpectedConditions.visibilityOf(augustMonthfromdropdown)).click();
-		okbuttonMonthSelect.click();
-		
-	}
+	
 	
 	public void choose_birthDate()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(birthdatefromdropdown)).click();
 		
 	}
 	
 	public String optoutpopup()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.visibilityOf(popUpforOptOut));
 		String popuptitle=popUpforOptOut.getText();
 		return popuptitle;
@@ -145,50 +154,50 @@ public class Customer_Info_Page extends Base
 	
 	public void click_letsButton()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.elementToBeClickable(cust_letstartButton));
 		cust_letstartButton.click();
 	}
 	
 	public void click_POPUP_cancelButton()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.visibilityOf(popupCancelButton)).click();
 	}
 	
 	public void click_POPUP_yesButton()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.visibilityOf(popupYesButton)).click();
 	}
 
 	public void click_OKButton_dateDropDown()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.visibilityOf(okbuttonbirthdate)).click();
 	}
 	
 	public void click_yesButtonPromotionalPage()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.visibilityOf(promotionalPOPUPYESButton)).click();
 	}
 	
 	public void click_checkBoxPromotionalPage()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.visibilityOf(checkboxPromotionalPOPUP)).click();
 	}
 	
 	public void click_letsStartPromotionalPOPUP()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.visibilityOf(letsStartButtonPromotionalPOPUP)).click();
 	}
 	
 	public void click_ContinueButton()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(39));
 		wait.until(ExpectedConditions.visibilityOf(finalContinueButton)).click();
 	}
 	
@@ -234,7 +243,7 @@ public class Customer_Info_Page extends Base
 	
 	public void click_continueButtonAt_RevordSummaryPage()
 	{
-		continueButtonAtRevordSummaryPage.click();
+		continueButtonAtRevordSummaryPagePremiumGift.click();
 	}
 	public void clickContinueButtonifpointsWon()
 	{
@@ -256,6 +265,14 @@ public class Customer_Info_Page extends Base
 	public void ClickDoneButtonNearbyRevordsBusinessespage()
 	{
 		doneButtonAtNewbyRevordsBusinesses.click();
+	}
+	
+	public String getToastMessageAgeValidation()
+	{
+		wait=new WebDriverWait(driver,Duration.ofSeconds(9));
+		wait.until(ExpectedConditions.visibilityOf(toastMessageforAgeValidation));
+		String toastMessageAge=toastMessageforAgeValidation.getAttribute("name");
+		return toastMessageAge;
 	}
 	
 	

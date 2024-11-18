@@ -1,6 +1,7 @@
 package base;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -9,6 +10,7 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -52,7 +54,7 @@ public class Base {
 		 service=new AppiumServiceBuilder()
 				.withAppiumJS(new File("C:\\Users\\Unity\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
 				.withIPAddress("127.0.0.1").usingPort(4723).withTimeout(Duration.ofSeconds(300)).build();
-		
+		//service.start();
 		
 		UiAutomator2Options options=new UiAutomator2Options();
 		options.setDeviceName("Pixel Tablet API 35");
@@ -60,6 +62,22 @@ public class Base {
 		//options.setCapability("orientation","LANDSCAPE");
 		 driver=new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(),options);
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	}
+	
+	public void configureAppium3() throws MalformedURLException, URISyntaxException
+	{
+		 service=new AppiumServiceBuilder()
+				.withAppiumJS(new File("C:\\Users\\Unity\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+				.withIPAddress("127.0.0.1").usingPort(4723).withTimeout(Duration.ofSeconds(300)).build();
+		
+		//service.start();
+		UiAutomator2Options options=new UiAutomator2Options();
+		options.setDeviceName("Medium Tablet API 35");
+		options.setApp("C:\\Users\\Unity\\git\\repository\\Revords\\src\\test\\resources\\StoreApp.apk");
+		//options.setCapability("orientation","LANDSCAPE");
+		 driver=new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(),options);
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		 //service.stop();
 	}
 	
 	
@@ -209,5 +227,18 @@ public class Base {
                 e.printStackTrace();
             }
      }
+	    
+	    public static String propertyFileData(String key) throws InterruptedException, IOException
+	    {
+	        Properties prop=new Properties();
+	        Thread.sleep(1000);
+
+	        FileInputStream myFile=new FileInputStream(System.getProperty("user.dir")+"\\TestData.properties");
+	        prop.load(myFile);
+	        Thread.sleep(1000);
+
+	        String value=prop.getProperty(key);
+	        return value;
+	    }
 
 }

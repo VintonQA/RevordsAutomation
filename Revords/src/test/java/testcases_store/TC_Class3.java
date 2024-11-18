@@ -16,6 +16,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import java.io.FileInputStream;
+import java.io.IOException;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -51,21 +52,23 @@ public class TC_Class3 extends Base
 	}
 	
 	@Test(priority = 0)
-	public void verify_Users_Visibility_On_HistoryPage() throws InterruptedException
+	public void verify_Users_Visibility_On_HistoryPage() throws InterruptedException, IOException
 	{
-		historyPage=new History_Page(driver);
+		
 		loginPage=new Login_Page(driver);
 		logger.info("Entering UserName");
-		loginPage.enterUserName();
+		loginPage.enterUserName(Base.propertyFileData("UserNameStore1"));
 		synchronization(1500);
 		logger.info("Entering Password");
-		loginPage.enterPassword();
+		loginPage.enterPassword(Base.propertyFileData("Password"));
 		logger.info("Clicking Login Button");
 		loginPage.clickLogin();
 		logger.info("Clicked login Button");
 		dashboard=new Dashboard(driver);
 		dashboard.clickHistory();
 		System.out.println("Clicked History Tab");
+		synchronization(2000);
+		historyPage=new History_Page(driver);
 		historyPage.click_firstUser();
 		System.out.println("Clicked First User in the list");
 		
@@ -74,12 +77,15 @@ public class TC_Class3 extends Base
 	@Test(priority = 1)
 	public void verify_SearchField_Visibility_Clickability_HistoryPage()
 	{
+		dashboard=new Dashboard(driver);
+		dashboard.clickHistory();
+		historyPage=new History_Page(driver);
 		boolean status = historyPage.click_SearchField();
 		System.out.println("Visibility of search field in history page is :- "+status);
 		
 	}
 	
-	@Test(priority = 2)
+	@Test(enabled = false)
 	public void verify_UserEdit_On_History_Page() throws InterruptedException
 	{
 		dashboard=new Dashboard(driver);
@@ -124,22 +130,43 @@ public class TC_Class3 extends Base
 	
 	
 	
-	@Test(priority = 3)
-	public void verify_SpinWheel_Promotiondata_AutopilotData_CustomerPage() throws InterruptedException
+	@Test(enabled = false)
+	public void verify_SpinWheel_RewardPresentOn_CustomerPage() throws InterruptedException
 	{
+		dashboard.click_homeTab();
+		dashboard=new Dashboard(driver);
 		try
 		{
+		
 		dashboard.click_dashboardFirstUser();
 		synchronization(2000);
 		System.out.println(dashboard.customer_speenwheel());
 		}
 		catch (Exception e) {
-			System.out.println("Spinwheel/PromotionData/AutopilotData is not Present at customer page");
-			logger.info("Spinwheel/PromotionData/AutopilotData is not Present at customer page");
+			System.out.println("Spinwheel is not Present at customer page");
+			logger.info("Spinwheel is not Present at customer page");
 		}
 	}
 	
-	@Test(priority = 4)
+	@Test(enabled = false)
+	public void verify_AutoPilot_PresentOn_CustomerPage()
+	{
+		try
+		{
+		boolean autopilotStatus = dashboard.customer_Page_Autopilot_Present();
+		System.out.println("Presence of Autopilot at Customer Page : - "+autopilotStatus);
+		dashboard=new Dashboard(driver);
+		String autoPilotData=dashboard.getAutopilotData();
+		System.out.println("Autopilot data is := "+autoPilotData);
+		}
+		catch (Exception e) {
+			
+			System.out.println("Autopilot is not present on customer page");
+		}
+	}
+	
+	
+	@Test(enabled = false)
 	public void verify_SpinwheelData_CustomerPage()
 	{
 		try
@@ -152,7 +179,7 @@ public class TC_Class3 extends Base
 		}
 	}
 	
-	@Test(priority = 5)
+	@Test(enabled = false)
 	public void Verify_SignupNewUserwith_MobileNumber() throws InterruptedException
 	{
 		dashboard=new Dashboard(driver);

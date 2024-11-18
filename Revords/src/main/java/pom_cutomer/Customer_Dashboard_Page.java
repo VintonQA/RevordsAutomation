@@ -36,6 +36,7 @@ public class Customer_Dashboard_Page
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"TERMS OF USE AGREEMENT FOR REVORDS LLC\")")private WebElement termsofuseAgreement;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"back-button\")")private WebElement backButtonNetworkLost;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Instantly redeem points at the store.\")")private WebElement dashboardPageElement;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"You agree to receive occasional updates and promotions via text messages.*\")")private WebElement optinPOPUPMessageDifferentlocation;
 	
 	public Customer_Dashboard_Page(AndroidDriver driver)
 	{
@@ -182,6 +183,12 @@ public class Customer_Dashboard_Page
 	{
 		String dashboardText=dashboardPageElement.getText();
 		return dashboardText;
+	}
+	
+	public String getoptinMessagetextDifferentlocation()
+	{
+		String optinMsg=optinPOPUPMessageDifferentlocation.getText();
+		return optinMsg;
 	}
 	
 }

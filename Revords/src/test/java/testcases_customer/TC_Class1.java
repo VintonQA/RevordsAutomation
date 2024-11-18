@@ -1,5 +1,6 @@
 package testcases_customer;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.NoSuchElementException;
@@ -46,12 +47,12 @@ public class TC_Class1 extends Base
 	}
 	
 	@Test(priority = 1)
-	public void verify_CustoerAppLogin_with_Wrong_Credentials()
+	public void verify_CustoerAppLogin_with_Wrong_Credentials() throws InterruptedException, IOException
 	{
 		custLogin=new Customer_Login_Page(driver);
 		custLogin.enter_wrongUserName();
 		System.out.println("WrongUserName Entered");
-		custLogin.enter_Password();
+		custLogin.enter_Password(Base.propertyFileData("Password"));
 		System.out.println("WrongPassword Entered");
 		custLogin.click_loginButton();
 		System.out.println("Clicked Login Button");
@@ -64,13 +65,13 @@ public class TC_Class1 extends Base
 	}
 	
 	@Test(priority = 2)
-	public void verify_CustomerAppLogin_with_Valid_Credentials()
+	public void verify_CustomerAppLogin_with_Valid_Credentials() throws InterruptedException, IOException
 	{
 		custLogin=new Customer_Login_Page(driver);
-		custLogin.enter_UserName();
+		custLogin.enter_UserName(Base.propertyFileData("UserNameCustomer1"));
 		System.out.println("UserName Entered");
 		logger.info("UserName Entered");
-		custLogin.enter_Password();
+		custLogin.enter_Password(Base.propertyFileData("Password"));
 		System.out.println("Password Entered");
 		logger.info("Password Entered");
 		custLogin.click_loginButton();
@@ -134,6 +135,7 @@ public class TC_Class1 extends Base
 		s.assertEquals(actualResult,ExpecedResult,"Terms Page's Text is not visible");
 		synchronization(2000);
 		custDash.close_privacypage();
+		logger.info("Tearms And Conditions Page Closed");
 		}
 		catch (Exception e) {
 			custDash.close_privacypage();
@@ -149,23 +151,23 @@ public class TC_Class1 extends Base
 	{
 		custDash=new Customer_Dashboard_Page(driver);
 		custDash.press_number9();
+		custDash.press_number7();
+		custDash.press_number3();
+		custDash.press_number4();
+		custDash.press_number0();
+		custDash.press_number1();
 		custDash.press_number4();
 		custDash.press_number9();
-		custDash.press_number9();
-		custDash.press_number2();
-		custDash.press_number9();
-		custDash.press_number0();
-		custDash.press_number3();
-		custDash.press_number9();
-		custDash.press_number0();
+		custDash.press_number4();
+		custDash.press_number6();
 		custDash.click_nextButton();
 		custInfo=new Customer_Info_Page(driver);
 		String actualResult=custInfo.bannerText();
 		String expectedResult="Enter Your Information";
 		Assert.assertEquals(actualResult,expectedResult,"customer Not redirected to Information page");
-		//logger.info("Customer is logged in Successfully using 10 digit Mobile Number");
+		logger.info("Customer is logged in Successfully using 10 digit Mobile Number");
 		System.out.println("Customer redirected to information page");
-		//logger.info("Customer is redirected to Enter Information Page");
+		logger.info("Customer is redirected to Enter Information Page");
 	}
 	
 	@Test(priority = 8)
@@ -178,9 +180,9 @@ public class TC_Class1 extends Base
 	}
 	
 	@Test(priority = 9)
-	public void verify_EmailTextBox_InformationPage()
+	public void verify_EmailTextBox_InformationPage() throws InterruptedException, IOException
 	{
-		custInfo.enter_customerEmail();
+		custInfo.enter_customerEmail(Base.propertyFileData("UserEmail"));
 		logger.info("Entered Customer Email ID on Information Page");
 		System.out.println("Entered Customer Email ID");
 	}
@@ -191,8 +193,10 @@ public class TC_Class1 extends Base
 		custInfo.choose_custBirthMonth();
 		System.out.println("Clicked on birth Month");
 		logger.info("Customer clicked on Month DropDown");
+		//custInfo.choose_birthMonth();
 		custInfo=new Customer_Info_Page(driver);
 		custInfo.choose_birthMonth();
+		logger.info("Customer Choosed Birth Month successfully");
 		
 	}
 	@Test(priority = 11)
@@ -259,11 +263,37 @@ public class TC_Class1 extends Base
 	}
 	
 	@Test(priority = 15)
-	public void click_letsStartButton()
+	public void validation_Age_CheckBox_customer_APP()
+	{
+		custInfo.check_custAgeCheckBox();
+		System.out.println("Age Checkbox is unchecked!!!!");
+		logger.info("Age Check Box is Unchecked Now");
+	}
+	
+	@Test(priority = 16)
+	public void click_letsStartButton() throws InterruptedException
 	{
 		custInfo.click_letsStartButton();
 		System.out.println("Lets Start Button is Clicked");
 		logger.info("Lets Start Button is Clicked");
+		logger.info("Customer is unable to Signup without click on Age Check Box");
+	}
+	
+	
+	@Test(priority = 17)
+	public void click_Age_CheckBox_Again()
+	{
+		custInfo.check_custAgeCheckBox();
+		System.out.println("Age CheckBOx is Checked Now Again");
+		logger.info("Age CheckBOx is Checked Now Again");
+	}
+	
+	@Test(priority = 18)
+	public void click_letsStartButtonAgain()
+	{
+		custInfo.click_letsStartButton();
+		System.out.println("Now Customer is able to signUP after clickon Age check Box");
+		logger.info("Now Customer is able to signUP after clickon Age check Box");
 	}
 	
 	
@@ -286,7 +316,7 @@ public class TC_Class1 extends Base
 //		}
 //	}
 	
-	@Test(priority = 16)
+	@Test(priority = 19)
 	public void verify_POPUP_Cancel_Button()
 	{
 		custInfo.click_POPUP_cancelButton();
@@ -294,8 +324,8 @@ public class TC_Class1 extends Base
 		logger.info("Clicked Cancel Button from POPUP");
 	}
 	
-	@Test(priority = 17)
-	public void verify_POP_yesButton()
+	@Test(priority = 20)
+	public void verify_POP_yesButton() throws InterruptedException
 	{
 		click_letsStartButton();
 		custInfo.click_POPUP_yesButton();
@@ -303,7 +333,7 @@ public class TC_Class1 extends Base
 		logger.info("Clicked Yes Button from POPUP");
 	}
 	
-	@Test(priority = 18)
+	@Test(priority = 21)
 	public void verify_ContinueButtonAndSpinWheelPage()
 	{
 		System.out.println("Spinwheel is Visible");
@@ -312,7 +342,7 @@ public class TC_Class1 extends Base
 		logger.info("Spinwheel is clicked");
 	}
 	
-	@Test(priority = 19)
+	@Test(priority = 22)
 	public void verify_RewardPOPUP() throws InterruptedException
 	{
 		synchronization(10000);
@@ -321,7 +351,7 @@ public class TC_Class1 extends Base
 		logger.info("After Spin Reward POP Message is :- "+custInfo.message_afterSpin());
 	}
 	
-	@Test(priority = 20)
+	@Test(priority = 23)
 	public void verifyReward_AtSpinWheelPage()
 	{
 		System.out.println("Reward at Spin Page PopUp :- "+custInfo.rewardAtSpinPage());
@@ -329,17 +359,17 @@ public class TC_Class1 extends Base
 	}
 	
 	
-	@Test(priority = 21)
+	@Test(priority = 24)
 	public void click_ContinueButton_Spinwheel()
 	{
 		custInfo.click_ContinueButtonSpinwheel();
 		logger.info("Continue button is clicked at After Spin");
 	}
 	
-	@Test(priority = 22)
+	@Test(priority = 25)
 	public void VerifySpinwheelData_AfterClicking_ContinueButton() throws InterruptedException
 	{
-		synchronization(25);
+		
 		try
 		{
 		System.out.println("Spin Reward is :- "+custInfo.spin_reward());
@@ -351,7 +381,7 @@ public class TC_Class1 extends Base
 		}
 	}
 	
-	@Test(priority = 23)
+	@Test(priority = 26)
 	public void VerifyCustomer_CurrentBalance_afterSpin_RevordSummaryPage()
 	{
 		String currentBalance=custInfo.CustomerBalanceRevordSummaryPage();
@@ -359,7 +389,7 @@ public class TC_Class1 extends Base
 		logger.info("Customer Current Balance after Spin At Revord Summary Page :- "+currentBalance);
 	}
 	
-	@Test(priority = 24)
+	@Test(priority = 27)
 	public void CustomerNameAtRevordSummaryPage()
 	{
 		String CustomerNameAtRevordSummaryPage=custInfo.customerNameAtRevordSummaryPage();
@@ -367,7 +397,7 @@ public class TC_Class1 extends Base
 		logger.info("Customer Name at Revord Summary Page :- "+CustomerNameAtRevordSummaryPage);
 	}
 	
-	@Test(priority = 25)
+	@Test(priority = 28)
 	public void Click_ContinueButton_At_RevordSummaryPage() throws InterruptedException
 	{
 		synchronization(10000);
@@ -378,14 +408,15 @@ public class TC_Class1 extends Base
 		catch (NoSuchElementException e)
 		{
 			custInfo.clickContinueButtonifpointsWon();
+			logger.info("Unable to click continue button at revord summary page");
 		}
 		catch (Exception e) {
 			System.out.println("Unable to find the Continue button at revord summary Page");
-			logger.info("Unable to find the Continue button at revord summary Page");
+			logger.error("Unable to find the Continue button at revord summary Page");
 		}
 	}
 	
-	@Test(priority = 26)
+	@Test(priority = 29)
 	public void verify_like_Button_At_NearBy_Revords_Businesses()
 	{
 		boolean likeButtonStatus = custInfo.likeButton();
@@ -393,7 +424,7 @@ public class TC_Class1 extends Base
 		logger.info("Visibility of Like Button at Nearby Revords Businesses Page :- "+likeButtonStatus);
 	}
 	
-	@Test(priority = 27)
+	@Test(priority = 30)
 	public void verify_Done_Button_At_Nearby_Revords_Business()
 	{
 		custInfo.ClickDoneButtonNearbyRevordsBusinessespage();
@@ -404,7 +435,7 @@ public class TC_Class1 extends Base
 	@AfterClass
 	public void close() throws InterruptedException
 	{
-		synchronization(150000);
+		synchronization(15000);
 		teardown();
 	}
 	

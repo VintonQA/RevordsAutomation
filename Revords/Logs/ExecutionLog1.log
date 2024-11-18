@@ -1192,3 +1192,910 @@
 2024-11-12 15:00:44,619 [main] INFO Revords - BackButton is clicked after NetworkLost in Customer Tab
 2024-11-12 15:00:54,751 [main] INFO Revords - Wifi/Network is enabled in Customer Tab 
 2024-11-12 15:00:58,775 [main] INFO Revords - Next Button is clicked on dashboard after connection restore in Customer Tab
+2024-11-13 10:18:41,777 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 10:18:43,058 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 10:18:46,254 [main] INFO Revords - 's Session Time is :- 4:53:47
+2024-11-13 10:18:49,206 [main] INFO Revords - Redeem Button Enabled status before selection of Reward/Promotion/Autopilot : - false
+2024-11-13 10:18:50,221 [main] INFO Revords - Redeem Button Enabled Status after Selection of Reward/Promotion/Autopilot : - true
+2024-11-13 10:18:51,178 [main] INFO Revords - Redeem POPUP Yes Button visibility :- true
+2024-11-13 10:18:51,283 [main] INFO Revords - Redeem POPUP No Button visibility :- true
+2024-11-13 10:19:11,396 [main] ERROR Revords - Couldnt Found any Rewards on dashboard
+2024-11-13 10:19:11,581 [main] INFO Revords - Landed on History Page Successfully
+2024-11-13 10:19:33,741 [main] INFO Revords - Search User Field is visible and working on history Page
+2024-11-13 10:20:14,032 [main] INFO Revords - UserName is :- USER 96633
+2024-11-13 10:20:14,235 [main] INFO Revords - User is Member Since :- Member Since Nov 08, 2024
+2024-11-13 10:20:14,397 [main] INFO Revords - user's Current Points :- 110 Current Point
+2024-11-13 10:20:14,551 [main] INFO Revords - User's LifeTime Points :- 110 Lifetime Point
+2024-11-13 10:20:14,714 [main] INFO Revords - User's PhoneNumber is :- (859) 659-6633
+2024-11-13 10:20:14,809 [main] INFO Revords - Is Email Field Present :- true
+2024-11-13 10:20:14,923 [main] INFO Revords - Is Notes Field Present :- true
+2024-11-13 10:20:19,188 [main] INFO Revords - Gust User Added Successfully!!!
+2024-11-13 10:20:28,618 [main] INFO Revords - User Name is :- Anonymous 7
+2024-11-13 10:20:28,732 [main] INFO Revords - Total Summary Rewards:- Earned points
+2024-11-13 10:20:29,340 [main] INFO Revords - Total Earned Points:- New Total
+2024-11-13 10:20:29,485 [main] INFO Revords - Summary Total:- 
+2024-11-13 10:20:30,590 [main] INFO Revords - User Signout SuccessFully
+2024-11-13 10:20:37,328 [main] INFO Revords - App Version Found:- App Version : 0.0.15
+2024-11-13 10:20:56,026 [main] INFO Revords - Promotion Redeem value is :- 0 Promotion Redeemed
+2024-11-13 10:21:07,704 [main] INFO Revords - AutoCampaignsRedeemed value is :- 0 Auto Campaigns Redeemed
+2024-11-13 10:21:19,112 [main] INFO Revords - RewardsRedeems value is :- 0 Rewards Redeemed
+2024-11-13 10:21:30,533 [main] INFO Revords - PointsEarned value is :- 1294 Points Earned
+2024-11-13 10:21:32,812 [main] INFO Revords - Both Date and activity Dropdown is visible and Clickable, TC Passed
+2024-11-13 10:24:14,304 [main] INFO Revords - Entering UserName
+2024-11-13 10:24:17,939 [main] INFO Revords - Entering Password
+2024-11-13 10:24:18,233 [main] INFO Revords - Clicking Login Button
+2024-11-13 10:24:18,857 [main] INFO Revords - Clicked login Button
+2024-11-13 10:25:13,185 [main] INFO Revords - User is not editable from History list
+2024-11-13 10:25:41,123 [main] INFO Revords - Spinwheel/PromotionData/AutopilotData is not Present at customer page
+2024-11-13 10:26:49,459 [main] INFO Revords - Mobile Number Entered Successfully
+2024-11-13 10:27:37,552 [main] INFO Revords - Entering UserName
+2024-11-13 10:27:41,294 [main] INFO Revords - Entering Password
+2024-11-13 10:27:41,567 [main] INFO Revords - Clicking Login Button
+2024-11-13 10:27:54,225 [main] INFO Revords - Disabling Wifi at Home Page
+2024-11-13 10:27:54,476 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 10:28:04,599 [main] INFO Revords - Enabling Wifi...
+2024-11-13 10:28:09,077 [main] INFO Revords - Clicked Home Tab after Connection Restore
+2024-11-13 10:28:19,237 [main] INFO Revords - Disabling Wifi at History Tab
+2024-11-13 10:28:19,448 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 10:28:29,574 [main] INFO Revords - Enabling Wifi...
+2024-11-13 10:28:34,114 [main] INFO Revords - History Tab is Visible and Clicked After Network Restore
+2024-11-13 10:28:44,348 [main] INFO Revords - Disabling Wifi at New Tab
+2024-11-13 10:28:44,676 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 10:28:54,798 [main] INFO Revords - Enabling Wifi...
+2024-11-13 10:28:57,004 [main] INFO Revords - NewUser Tab is Visible and Clicked After Network Restore
+2024-11-13 10:29:07,531 [main] INFO Revords - Disabling Wifi at Setting Tab
+2024-11-13 10:29:07,847 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 10:29:17,947 [main] INFO Revords - Enabling Wifi...
+2024-11-13 10:29:19,644 [main] INFO Revords - Setting Tab is Visible and Clicked After Network Restore
+2024-11-13 10:29:32,162 [main] INFO Revords - App Installation status :- true
+2024-11-13 10:30:23,199 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 10:30:26,252 [main] INFO Revords - UserName Entered
+2024-11-13 10:30:26,482 [main] INFO Revords - Password Entered
+2024-11-13 10:30:26,740 [main] INFO Revords - Clicked Login Button
+2024-11-13 10:30:27,633 [main] INFO Revords - Customer logged in successfully
+2024-11-13 10:30:27,633 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 10:30:38,423 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 10:30:38,603 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 10:30:39,794 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 10:31:00,842 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 10:31:00,842 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 10:43:14,080 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 10:43:15,388 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 10:43:17,555 [main] ERROR Revords - Couldn't Find any session time
+2024-11-13 10:44:25,279 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 10:44:26,565 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 10:44:28,723 [main] INFO Revords - 's Session Time is :- 0:13:17
+2024-11-13 10:58:02,790 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 10:58:05,254 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 10:59:11,839 [main] ERROR Revords - Couldnt Found any Rewards on dashboard
+2024-11-13 10:59:12,024 [main] INFO Revords - Landed on History Page Successfully
+2024-11-13 10:59:36,113 [main] INFO Revords - Search User Field is visible and working on history Page
+2024-11-13 11:00:16,504 [main] INFO Revords - UserName is :- USER 40366
+2024-11-13 11:00:16,678 [main] INFO Revords - User is Member Since :- Member Since Nov 13, 2024
+2024-11-13 11:00:16,831 [main] INFO Revords - user's Current Points :- 1 Current Point
+2024-11-13 11:00:17,005 [main] INFO Revords - User's LifeTime Points :- 1 Lifetime Point
+2024-11-13 11:00:17,176 [main] INFO Revords - User's PhoneNumber is :- (949) 944-0366
+2024-11-13 11:00:17,295 [main] INFO Revords - Is Email Field Present :- true
+2024-11-13 11:00:17,426 [main] INFO Revords - Is Notes Field Present :- true
+2024-11-13 11:00:21,852 [main] INFO Revords - Gust User Added Successfully!!!
+2024-11-13 11:00:51,532 [main] ERROR Revords - Unable to Signout the User, Test Case failed
+2024-11-13 11:00:55,576 [main] ERROR Revords - Setting Page is not loaded properly, TC Failed
+2024-11-13 11:01:15,585 [main] INFO Revords - Promotion Redeem value is :- 0 Promotion Redeemed
+2024-11-13 11:01:28,489 [main] INFO Revords - AutoCampaignsRedeemed value is :- 0 Auto Campaigns Redeemed
+2024-11-13 11:01:41,304 [main] INFO Revords - RewardsRedeems value is :- 0 Rewards Redeemed
+2024-11-13 11:01:53,995 [main] INFO Revords - PointsEarned value is :- 1294 Points Earned
+2024-11-13 11:02:00,459 [main] INFO Revords - Both Date and activity Dropdown is visible and Clickable, TC Passed
+2024-11-13 11:04:00,904 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 11:04:02,379 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 11:04:04,679 [main] INFO Revords - Anonymous 7's Session Time is :- 0:03:37
+2024-11-13 11:05:52,328 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 11:05:54,030 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 11:05:55,545 [main] ERROR Revords - Couldn't Find any session time
+2024-11-13 11:06:31,138 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 11:06:32,375 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 11:06:34,754 [main] ERROR Revords - Couldn't Find any session time
+2024-11-13 11:18:42,403 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 11:18:43,744 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 11:18:46,349 [main] INFO Revords - Anonymous 7's Session Time is :- 0:18:18
+2024-11-13 11:43:13,234 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 11:43:14,560 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 11:43:17,950 [main] INFO Revords - Anonymous 7's Session Time is :- 0:42:50
+2024-11-13 11:44:01,962 [main] INFO Revords - Rewards are Visible on DashBoard Page!!!!
+2024-11-13 11:44:02,168 [main] INFO Revords - Landed on History Page Successfully
+2024-11-13 11:50:54,794 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 11:50:56,684 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 11:50:59,483 [main] INFO Revords - Anonymous 7's Session Time is :- 0:50:32
+2024-11-13 11:51:42,816 [main] INFO Revords - Rewards are Visible on DashBoard Page!!!!
+2024-11-13 11:52:09,911 [main] ERROR Revords - User's Details Are Not Visible
+2024-11-13 11:52:14,719 [main] INFO Revords - Gust User Added Successfully!!!
+2024-11-13 12:07:39,143 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 12:07:40,561 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 12:07:42,925 [main] INFO Revords - Anonymous 5's Session Time is :- 0:15:22
+2024-11-13 12:08:26,101 [main] INFO Revords - Rewards are Visible on DashBoard Page!!!!
+2024-11-13 12:08:53,039 [main] ERROR Revords - It is Anonymous User, Can't See it's details
+2024-11-13 12:08:57,686 [main] INFO Revords - Gust User Added Successfully!!!
+2024-11-13 12:09:07,633 [main] INFO Revords - User Name is :- Anonymous 4
+2024-11-13 12:09:07,783 [main] INFO Revords - Total Summary Rewards:- Earned points
+2024-11-13 12:09:09,193 [main] INFO Revords - Total Earned Points:- New Total
+2024-11-13 12:09:09,396 [main] INFO Revords - Summary Total:- 
+2024-11-13 12:09:10,482 [main] INFO Revords - User Signout SuccessFully
+2024-11-13 12:09:19,202 [main] ERROR Revords - Setting Page is not loaded properly, TC Failed
+2024-11-13 12:09:46,453 [main] INFO Revords - Promotion Redeem value is :- 0 Promotion Redeemed
+2024-11-13 12:10:00,429 [main] INFO Revords - AutoCampaignsRedeemed value is :- 0 Auto Campaigns Redeemed
+2024-11-13 12:10:14,119 [main] INFO Revords - RewardsRedeems value is :- 0 Rewards Redeemed
+2024-11-13 12:10:28,032 [main] INFO Revords - PointsEarned value is :- 1294 Points Earned
+2024-11-13 12:10:29,681 [main] INFO Revords - Both Date and activity Dropdown is visible and Clickable, TC Passed
+2024-11-13 12:13:11,852 [main] INFO Revords - Entering UserName
+2024-11-13 12:13:15,656 [main] INFO Revords - Entering Password
+2024-11-13 12:13:16,045 [main] INFO Revords - Clicking Login Button
+2024-11-13 12:13:16,712 [main] INFO Revords - Clicked login Button
+2024-11-13 12:14:22,374 [main] INFO Revords - User is not editable from History list
+2024-11-13 12:14:50,796 [main] INFO Revords - Spinwheel/PromotionData/AutopilotData is not Present at customer page
+2024-11-13 12:15:58,468 [main] INFO Revords - Mobile Number Entered Successfully
+2024-11-13 12:16:01,881 [main] INFO Revords - New User Created successfully using mobile number
+2024-11-13 12:16:29,061 [main] INFO Revords - Entering UserName
+2024-11-13 12:16:32,733 [main] INFO Revords - Entering Password
+2024-11-13 12:16:33,091 [main] INFO Revords - Clicking Login Button
+2024-11-13 12:16:45,776 [main] INFO Revords - Disabling Wifi at Home Page
+2024-11-13 12:16:46,101 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 12:16:56,227 [main] INFO Revords - Enabling Wifi...
+2024-11-13 12:17:01,294 [main] INFO Revords - Clicked Home Tab after Connection Restore
+2024-11-13 12:17:11,589 [main] INFO Revords - Disabling Wifi at History Tab
+2024-11-13 12:17:11,953 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 12:17:22,069 [main] INFO Revords - Enabling Wifi...
+2024-11-13 12:17:26,814 [main] INFO Revords - History Tab is Visible and Clicked After Network Restore
+2024-11-13 12:17:37,119 [main] INFO Revords - Disabling Wifi at New Tab
+2024-11-13 12:17:37,464 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 12:17:47,589 [main] INFO Revords - Enabling Wifi...
+2024-11-13 12:17:49,243 [main] INFO Revords - NewUser Tab is Visible and Clicked After Network Restore
+2024-11-13 12:17:59,781 [main] INFO Revords - Disabling Wifi at Setting Tab
+2024-11-13 12:18:00,162 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 12:18:10,290 [main] INFO Revords - Enabling Wifi...
+2024-11-13 12:18:10,749 [main] INFO Revords - Setting Tab is Visible and Clicked After Network Restore
+2024-11-13 12:18:24,042 [main] INFO Revords - App Installation status :- true
+2024-11-13 12:19:15,101 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 12:19:17,641 [main] INFO Revords - UserName Entered
+2024-11-13 12:19:17,960 [main] INFO Revords - Password Entered
+2024-11-13 12:19:18,310 [main] INFO Revords - Clicked Login Button
+2024-11-13 12:19:19,152 [main] INFO Revords - Customer logged in successfully
+2024-11-13 12:19:19,153 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 12:19:30,403 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 12:19:30,649 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 12:19:31,981 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 12:19:53,148 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 12:19:53,148 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 12:20:02,757 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 12:20:02,758 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 12:20:03,352 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 12:20:05,781 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 12:20:06,677 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 12:52:19,866 [main] INFO Revords - App Installation status :- true
+2024-11-13 12:52:24,643 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 12:52:27,545 [main] INFO Revords - UserName Entered
+2024-11-13 12:52:27,889 [main] INFO Revords - Password Entered
+2024-11-13 12:52:28,213 [main] INFO Revords - Clicked Login Button
+2024-11-13 12:52:29,137 [main] INFO Revords - Customer logged in successfully
+2024-11-13 12:52:29,138 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 12:52:40,593 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 12:52:40,874 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 12:52:42,138 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 12:53:03,314 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 12:53:03,315 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 12:53:13,674 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 12:53:13,675 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 12:53:14,262 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 12:53:15,881 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 12:53:16,961 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 12:55:17,053 [main] INFO Revords - App Installation status :- true
+2024-11-13 12:55:22,007 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 12:55:24,792 [main] INFO Revords - UserName Entered
+2024-11-13 12:55:25,130 [main] INFO Revords - Password Entered
+2024-11-13 12:55:25,465 [main] INFO Revords - Clicked Login Button
+2024-11-13 12:55:26,428 [main] INFO Revords - Customer logged in successfully
+2024-11-13 12:55:26,429 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 12:55:38,096 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 12:55:38,369 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 12:55:39,686 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 12:56:00,778 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 12:56:00,779 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 12:56:11,328 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 12:56:11,329 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 12:56:11,921 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 12:56:14,369 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 12:56:15,264 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 12:59:22,568 [main] INFO Revords - App Installation status :- true
+2024-11-13 12:59:27,953 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 12:59:30,581 [main] INFO Revords - UserName Entered
+2024-11-13 12:59:30,908 [main] INFO Revords - Password Entered
+2024-11-13 12:59:31,230 [main] INFO Revords - Clicked Login Button
+2024-11-13 12:59:32,179 [main] INFO Revords - Customer logged in successfully
+2024-11-13 12:59:32,179 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 12:59:43,562 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 12:59:43,861 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 12:59:45,177 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:00:06,505 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:00:06,505 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:00:17,473 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 13:00:17,474 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 13:00:18,080 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 13:00:19,528 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 13:00:20,658 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 13:02:14,805 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:02:20,282 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:02:22,551 [main] INFO Revords - UserName Entered
+2024-11-13 13:02:22,882 [main] INFO Revords - Password Entered
+2024-11-13 13:02:23,226 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:02:24,119 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:02:24,119 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:02:36,089 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:02:36,370 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:02:37,641 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:03:08,646 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:03:14,116 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:03:16,961 [main] INFO Revords - UserName Entered
+2024-11-13 13:03:17,292 [main] INFO Revords - Password Entered
+2024-11-13 13:03:17,664 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:03:18,516 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:03:18,517 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:03:30,510 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:03:30,806 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:03:32,176 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:03:53,396 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:03:53,397 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:04:24,412 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:04:29,408 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:04:32,315 [main] INFO Revords - UserName Entered
+2024-11-13 13:04:32,687 [main] INFO Revords - Password Entered
+2024-11-13 13:04:33,053 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:04:34,165 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:04:34,166 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:04:46,403 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:04:46,734 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:04:47,996 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:05:09,363 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:05:09,364 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:07:21,730 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:07:26,753 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:07:29,656 [main] INFO Revords - UserName Entered
+2024-11-13 13:07:30,047 [main] INFO Revords - Password Entered
+2024-11-13 13:07:30,435 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:07:31,355 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:07:31,356 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:07:43,564 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:07:43,990 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:07:45,276 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:08:06,413 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:08:06,413 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:08:17,770 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 13:08:17,770 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 13:08:18,343 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 13:08:21,023 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 13:08:22,039 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 13:09:38,454 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:09:44,068 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:09:46,499 [main] INFO Revords - UserName Entered
+2024-11-13 13:09:46,916 [main] INFO Revords - Password Entered
+2024-11-13 13:09:47,360 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:09:48,279 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:09:48,280 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:10:01,227 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:10:01,638 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:10:03,005 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:10:24,280 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:10:24,280 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:40:05,155 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:40:10,866 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:40:13,594 [main] INFO Revords - UserName Entered
+2024-11-13 13:40:13,923 [main] INFO Revords - Password Entered
+2024-11-13 13:40:14,287 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:40:15,898 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:40:15,899 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:40:27,273 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:40:27,601 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:40:28,885 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:40:50,107 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:40:50,108 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:41:00,168 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 13:41:00,169 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 13:41:00,706 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 13:41:02,328 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 13:41:03,365 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 13:42:26,964 [main] ERROR Revords - Customer is unable to choose Birth Month 
+2024-11-13 13:44:33,141 [main] ERROR Revords - Customer Age CheckBox is not visible/checked
+2024-11-13 13:45:01,834 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-13 13:45:44,978 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-13 13:49:50,835 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:49:56,304 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:49:58,985 [main] INFO Revords - UserName Entered
+2024-11-13 13:49:59,350 [main] INFO Revords - Password Entered
+2024-11-13 13:49:59,714 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:50:01,061 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:50:01,062 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:50:13,715 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:50:14,056 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:50:15,354 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:50:36,801 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:50:36,802 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:50:46,872 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 13:50:46,873 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 13:50:47,647 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 13:50:49,277 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 13:50:51,395 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 13:52:51,173 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:52:56,730 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:52:59,323 [main] INFO Revords - UserName Entered
+2024-11-13 13:52:59,696 [main] INFO Revords - Password Entered
+2024-11-13 13:53:00,070 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:53:01,124 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:53:01,124 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:53:12,888 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:53:13,297 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:53:14,649 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:53:35,797 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:53:35,798 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:53:46,262 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 13:53:46,262 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 13:53:47,088 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 13:53:49,322 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 13:53:50,287 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 13:56:57,376 [main] INFO Revords - App Installation status :- true
+2024-11-13 13:57:02,447 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 13:57:05,226 [main] INFO Revords - UserName Entered
+2024-11-13 13:57:05,617 [main] INFO Revords - Password Entered
+2024-11-13 13:57:05,982 [main] INFO Revords - Clicked Login Button
+2024-11-13 13:57:06,894 [main] INFO Revords - Customer logged in successfully
+2024-11-13 13:57:06,894 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 13:57:18,993 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 13:57:19,311 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 13:57:20,697 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 13:57:41,891 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 13:57:41,891 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 13:57:52,525 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 13:57:52,525 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 13:57:53,329 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 13:57:55,919 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 13:57:56,918 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 13:58:39,274 [main] ERROR Revords - Customer is unable to choose Birth Month 
+2024-11-13 14:00:43,909 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-13 14:00:44,497 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-13 14:02:19,908 [main] INFO Revords - App Installation status :- true
+2024-11-13 14:02:25,042 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 14:02:27,920 [main] INFO Revords - UserName Entered
+2024-11-13 14:02:28,278 [main] INFO Revords - Password Entered
+2024-11-13 14:02:28,636 [main] INFO Revords - Clicked Login Button
+2024-11-13 14:02:30,249 [main] INFO Revords - Customer logged in successfully
+2024-11-13 14:02:30,250 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 14:02:43,275 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 14:02:43,609 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 14:02:44,943 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 14:03:06,116 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 14:03:06,117 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 14:03:17,455 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 14:03:17,455 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 14:03:18,055 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 14:03:19,708 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 14:03:20,834 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 14:07:23,787 [main] INFO Revords - App Installation status :- true
+2024-11-13 14:07:28,962 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 14:07:31,843 [main] INFO Revords - UserName Entered
+2024-11-13 14:07:32,246 [main] INFO Revords - Password Entered
+2024-11-13 14:07:32,636 [main] INFO Revords - Clicked Login Button
+2024-11-13 14:07:33,661 [main] INFO Revords - Customer logged in successfully
+2024-11-13 14:07:33,662 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 14:07:46,080 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 14:07:46,391 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 14:07:47,794 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 14:08:09,214 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 14:08:09,214 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 14:08:19,659 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 14:08:19,660 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 14:08:20,315 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 14:08:22,085 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 14:08:23,265 [main] INFO Revords - Customer clicked on Datedrop Down
+2024-11-13 14:08:25,053 [main] INFO Revords - Customer Choosed birth date
+2024-11-13 14:17:34,740 [main] INFO Revords - App Installation status :- true
+2024-11-13 14:17:39,866 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 14:17:42,616 [main] INFO Revords - UserName Entered
+2024-11-13 14:17:43,006 [main] INFO Revords - Password Entered
+2024-11-13 14:17:43,387 [main] INFO Revords - Clicked Login Button
+2024-11-13 14:17:44,778 [main] INFO Revords - Customer logged in successfully
+2024-11-13 14:17:44,779 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 14:17:57,093 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 14:17:57,414 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 14:17:58,800 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 14:18:20,054 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 14:18:20,055 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 14:18:30,400 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 14:18:30,401 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 14:18:31,146 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 14:18:33,601 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 14:18:34,565 [main] INFO Revords - Customer clicked on Datedrop Down
+2024-11-13 14:20:28,905 [main] INFO Revords - App Installation status :- true
+2024-11-13 14:20:34,295 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 14:20:36,586 [main] INFO Revords - UserName Entered
+2024-11-13 14:20:36,924 [main] INFO Revords - Password Entered
+2024-11-13 14:20:37,278 [main] INFO Revords - Clicked Login Button
+2024-11-13 14:20:38,178 [main] INFO Revords - Customer logged in successfully
+2024-11-13 14:20:38,179 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 14:20:49,774 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 14:20:50,098 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 14:20:51,411 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 14:21:12,664 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 14:21:12,664 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 14:21:22,778 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 14:21:22,779 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 14:21:23,446 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 14:21:25,647 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 14:21:26,629 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 14:21:29,397 [main] INFO Revords - Customer clicked on Datedrop Down
+2024-11-13 14:21:30,695 [main] INFO Revords - Customer Choosed birth date
+2024-11-13 14:21:32,850 [main] INFO Revords - Opt-in And Opt-out Radio Buttons are visible and clickable
+2024-11-13 14:21:33,441 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-13 14:21:33,915 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-13 14:21:34,660 [main] INFO Revords - Clicked Cancel Button from POPUP
+2024-11-13 14:21:35,264 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-13 14:21:35,992 [main] INFO Revords - Clicked Yes Button from POPUP
+2024-11-13 14:21:39,729 [main] INFO Revords - Spinwheel is clicked
+2024-11-13 14:22:02,111 [main] INFO Revords - After Spin Reward POP Message is :- Congratulations you have earned
+2024-11-13 14:22:04,919 [main] INFO Revords - Reward at Spin Page PopUp :- Lottery Ticket
+2024-11-13 14:22:06,851 [main] INFO Revords - Continue button is clicked at After Spin
+2024-11-13 14:22:09,595 [main] INFO Revords - Customer Current Balance after Spin At Revord Summary Page :- 0 PT
+2024-11-13 14:22:09,700 [main] INFO Revords - Customer Name at Revord Summary Page :- piyush
+2024-11-13 14:22:21,307 [main] INFO Revords - Visibility of Like Button at Nearby Revords Businesses Page :- true
+2024-11-13 14:22:21,664 [main] INFO Revords - Done Button is clicked at Nearby_Revords_Business Page!!!
+2024-11-13 14:32:16,256 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 14:32:18,181 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 14:32:19,144 [main] INFO Revords - 's Session Time is :- $15 FreePlay - Redeem 27 points
+2024-11-13 14:38:39,064 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-13 14:38:40,928 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-13 14:38:43,469 [main] ERROR Revords - Couldn't Find any session time
+2024-11-13 14:38:45,800 [main] INFO Revords - Redeem Button Enabled status before selection of Reward/Promotion/Autopilot : - false
+2024-11-13 14:38:47,853 [main] INFO Revords - Redeem Button Enabled Status after Selection of Reward/Promotion/Autopilot : - true
+2024-11-13 14:38:48,898 [main] INFO Revords - Redeem POPUP Yes Button visibility :- true
+2024-11-13 14:38:49,013 [main] INFO Revords - Redeem POPUP No Button visibility :- true
+2024-11-13 14:38:51,124 [main] INFO Revords - Rewards are Visible on DashBoard Page!!!!
+2024-11-13 14:38:59,763 [main] INFO Revords - UserName is :- USER 96633
+2024-11-13 14:38:59,993 [main] INFO Revords - User is Member Since :- Member Since Nov 08, 2024
+2024-11-13 14:39:00,223 [main] INFO Revords - user's Current Points :- 114 Current Point
+2024-11-13 14:39:00,455 [main] INFO Revords - User's LifeTime Points :- 114 Lifetime Point
+2024-11-13 14:39:00,666 [main] INFO Revords - User's PhoneNumber is :- (859) 659-6633
+2024-11-13 14:39:00,824 [main] INFO Revords - Is Email Field Present :- true
+2024-11-13 14:39:00,997 [main] INFO Revords - Is Notes Field Present :- true
+2024-11-13 14:39:06,177 [main] INFO Revords - Gust User Added Successfully!!!
+2024-11-13 14:39:16,529 [main] INFO Revords - User Name is :- Anonymous 2
+2024-11-13 14:39:16,716 [main] INFO Revords - Total Summary Rewards:- Earned points
+2024-11-13 14:39:16,920 [main] INFO Revords - Total Earned Points:- New Total
+2024-11-13 14:39:17,545 [main] INFO Revords - Summary Total:- 
+2024-11-13 14:39:19,651 [main] INFO Revords - User Signout SuccessFully
+2024-11-13 14:39:30,560 [main] INFO Revords - App Version Found:- App Version : 0.0.15
+2024-11-13 14:40:11,636 [main] INFO Revords - Promotion Redeem value is :- 0 Promotion Redeemed
+2024-11-13 14:40:29,364 [main] INFO Revords - AutoCampaignsRedeemed value is :- 0 Auto Campaigns Redeemed
+2024-11-13 14:40:46,920 [main] INFO Revords - RewardsRedeems value is :- 0 Rewards Redeemed
+2024-11-13 14:41:04,707 [main] INFO Revords - PointsEarned value is :- 1319 Points Earned
+2024-11-13 14:41:06,534 [main] INFO Revords - Both Date and activity Dropdown is visible and Clickable, TC Passed
+2024-11-13 14:43:50,939 [main] INFO Revords - Entering UserName
+2024-11-13 14:43:54,807 [main] INFO Revords - Entering Password
+2024-11-13 14:43:55,173 [main] INFO Revords - Clicking Login Button
+2024-11-13 14:43:55,859 [main] INFO Revords - Clicked login Button
+2024-11-13 14:45:10,919 [main] INFO Revords - User is not editable from History list
+2024-11-13 14:45:44,566 [main] INFO Revords - Spinwheel/PromotionData/AutopilotData is not Present at customer page
+2024-11-13 14:46:57,349 [main] INFO Revords - Mobile Number Entered Successfully
+2024-11-13 14:47:48,216 [main] INFO Revords - Entering UserName
+2024-11-13 14:47:52,166 [main] INFO Revords - Entering Password
+2024-11-13 14:47:52,525 [main] INFO Revords - Clicking Login Button
+2024-11-13 14:48:05,225 [main] INFO Revords - Disabling Wifi at Home Page
+2024-11-13 14:48:05,661 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 14:48:15,776 [main] INFO Revords - Enabling Wifi...
+2024-11-13 14:48:21,222 [main] INFO Revords - Clicked Home Tab after Connection Restore
+2024-11-13 14:48:31,544 [main] INFO Revords - Disabling Wifi at History Tab
+2024-11-13 14:48:31,954 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 14:48:42,073 [main] INFO Revords - Enabling Wifi...
+2024-11-13 14:48:46,993 [main] INFO Revords - History Tab is Visible and Clicked After Network Restore
+2024-11-13 14:48:57,342 [main] INFO Revords - Disabling Wifi at New Tab
+2024-11-13 14:48:57,796 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 14:49:07,922 [main] INFO Revords - Enabling Wifi...
+2024-11-13 14:49:10,632 [main] INFO Revords - NewUser Tab is Visible and Clicked After Network Restore
+2024-11-13 14:49:21,905 [main] INFO Revords - Disabling Wifi at Setting Tab
+2024-11-13 14:49:22,359 [main] INFO Revords - Clicked BackButton when Wifi is not present
+2024-11-13 14:49:32,497 [main] INFO Revords - Enabling Wifi...
+2024-11-13 14:49:34,530 [main] INFO Revords - Setting Tab is Visible and Clicked After Network Restore
+2024-11-13 14:49:49,841 [main] INFO Revords - App Installation status :- true
+2024-11-13 14:50:38,539 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-13 14:50:41,467 [main] INFO Revords - UserName Entered
+2024-11-13 14:50:41,819 [main] INFO Revords - Password Entered
+2024-11-13 14:50:42,218 [main] INFO Revords - Clicked Login Button
+2024-11-13 14:50:43,331 [main] INFO Revords - Customer logged in successfully
+2024-11-13 14:50:43,332 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-13 14:50:55,422 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-13 14:50:55,732 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-13 14:50:57,000 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-13 14:51:18,265 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-13 14:51:18,266 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-13 14:51:28,623 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-13 14:51:28,624 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-13 14:51:29,406 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-13 14:51:31,662 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-13 14:51:32,022 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-13 14:51:33,930 [main] INFO Revords - Customer Choosed Birth Month successfully
+2024-11-13 14:51:35,181 [main] INFO Revords - Customer clicked on Datedrop Down
+2024-11-13 14:51:36,302 [main] INFO Revords - Customer Choosed birth date
+2024-11-13 14:51:38,687 [main] INFO Revords - Opt-in And Opt-out Radio Buttons are visible and clickable
+2024-11-13 14:51:39,369 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-13 14:51:39,963 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-13 14:51:40,698 [main] INFO Revords - Clicked Cancel Button from POPUP
+2024-11-13 14:51:41,313 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-13 14:51:42,081 [main] INFO Revords - Clicked Yes Button from POPUP
+2024-11-13 14:51:46,045 [main] INFO Revords - Spinwheel is clicked
+2024-11-13 14:52:07,951 [main] INFO Revords - After Spin Reward POP Message is :- Congratulations you have earned
+2024-11-13 14:52:11,898 [main] INFO Revords - Reward at Spin Page PopUp :- Premium Gift
+2024-11-13 14:52:13,778 [main] INFO Revords - Continue button is clicked at After Spin
+2024-11-13 14:52:15,832 [main] INFO Revords - Spin Reward Points at Revord Summary Page is :- Continue
+2024-11-13 14:52:15,969 [main] INFO Revords - Customer Current Balance after Spin At Revord Summary Page :- 0 PT
+2024-11-13 14:52:16,127 [main] INFO Revords - Customer Name at Revord Summary Page :- piyush
+2024-11-13 14:52:28,378 [main] INFO Revords - Visibility of Like Button at Nearby Revords Businesses Page :- true
+2024-11-13 14:52:29,123 [main] INFO Revords - Done Button is clicked at Nearby_Revords_Business Page!!!
+2024-11-13 14:55:28,229 [main] INFO Revords - Existing Customer entered Mobile Number
+2024-11-13 14:55:59,060 [main] INFO Revords - Disabling Wifi at Dashboard in Customer Tab
+2024-11-13 14:56:03,013 [main] INFO Revords - BackButton is clicked after NetworkLost in Customer Tab
+2024-11-13 14:56:13,148 [main] INFO Revords - Wifi/Network is enabled in Customer Tab 
+2024-11-13 14:56:13,730 [main] INFO Revords - Next Button is clicked on dashboard after connection restore in Customer Tab
+2024-11-14 10:08:00,262 [main] INFO Revords - Entering UserName
+2024-11-14 10:08:02,880 [main] INFO Revords - Entering Password
+2024-11-14 10:08:03,149 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:08:03,784 [main] INFO Revords - Clicked login Button
+2024-11-14 10:09:37,305 [main] INFO Revords - Entering UserName
+2024-11-14 10:09:40,012 [main] INFO Revords - Entering Password
+2024-11-14 10:09:40,297 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:09:40,934 [main] INFO Revords - Clicked login Button
+2024-11-14 10:11:16,863 [main] INFO Revords - Entering UserName
+2024-11-14 10:11:19,659 [main] INFO Revords - Entering Password
+2024-11-14 10:11:19,955 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:11:20,585 [main] INFO Revords - Clicked login Button
+2024-11-14 10:13:04,014 [main] INFO Revords - Entering UserName
+2024-11-14 10:13:06,811 [main] INFO Revords - Entering Password
+2024-11-14 10:13:07,069 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:13:07,718 [main] INFO Revords - Clicked login Button
+2024-11-14 10:15:30,577 [main] INFO Revords - Entering UserName
+2024-11-14 10:15:33,310 [main] INFO Revords - Entering Password
+2024-11-14 10:15:33,624 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:15:33,824 [main] INFO Revords - Clicked login Button
+2024-11-14 10:16:48,563 [main] INFO Revords - Spinwheel/PromotionData/AutopilotData is not Present at customer page
+2024-11-14 10:32:58,704 [main] INFO Revords - Entering UserName
+2024-11-14 10:33:01,444 [main] INFO Revords - Entering Password
+2024-11-14 10:33:01,717 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:33:02,355 [main] INFO Revords - Clicked login Button
+2024-11-14 10:34:26,072 [main] INFO Revords - Entering UserName
+2024-11-14 10:34:28,609 [main] INFO Revords - Entering Password
+2024-11-14 10:34:59,874 [main] INFO Revords - Entering UserName
+2024-11-14 10:35:02,441 [main] INFO Revords - Entering Password
+2024-11-14 10:35:02,727 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:35:03,371 [main] INFO Revords - Clicked login Button
+2024-11-14 10:35:44,790 [main] INFO Revords - Spinwheel is not Present at customer page
+2024-11-14 10:36:47,509 [main] INFO Revords - Entering UserName
+2024-11-14 10:36:50,071 [main] INFO Revords - Entering Password
+2024-11-14 10:36:50,356 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:36:51,001 [main] INFO Revords - Clicked login Button
+2024-11-14 10:37:59,357 [main] INFO Revords - Entering UserName
+2024-11-14 10:38:01,892 [main] INFO Revords - Entering Password
+2024-11-14 10:38:02,169 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:38:02,803 [main] INFO Revords - Clicked login Button
+2024-11-14 10:39:03,015 [main] INFO Revords - Entering UserName
+2024-11-14 10:39:05,582 [main] INFO Revords - Entering Password
+2024-11-14 10:39:05,898 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:39:06,537 [main] INFO Revords - Clicked login Button
+2024-11-14 10:43:08,951 [main] INFO Revords - Entering UserName
+2024-11-14 10:43:11,486 [main] INFO Revords - Entering Password
+2024-11-14 10:43:11,815 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:43:12,489 [main] INFO Revords - Clicked login Button
+2024-11-14 10:44:03,659 [main] INFO Revords - Spinwheel is not Present at customer page
+2024-11-14 10:50:40,023 [main] INFO Revords - Entering UserName
+2024-11-14 10:50:42,664 [main] INFO Revords - Entering Password
+2024-11-14 10:50:42,964 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:50:43,603 [main] INFO Revords - Clicked login Button
+2024-11-14 10:51:32,029 [main] INFO Revords - User is not editable from History list
+2024-11-14 10:51:54,795 [main] INFO Revords - Spinwheel is not Present at customer page
+2024-11-14 10:55:47,122 [main] INFO Revords - Entering UserName
+2024-11-14 10:55:49,689 [main] INFO Revords - Entering Password
+2024-11-14 10:55:49,995 [main] INFO Revords - Clicking Login Button
+2024-11-14 10:55:50,173 [main] INFO Revords - Clicked login Button
+2024-11-14 10:57:08,257 [main] INFO Revords - Spinwheel is not Present at customer page
+2024-11-14 11:01:48,223 [main] INFO Revords - Entering UserName
+2024-11-14 11:01:50,764 [main] INFO Revords - Entering Password
+2024-11-14 11:01:51,057 [main] INFO Revords - Clicking Login Button
+2024-11-14 11:01:51,687 [main] INFO Revords - Clicked login Button
+2024-11-14 11:02:54,493 [main] INFO Revords - Spinwheel is not Present at customer page
+2024-11-14 11:06:31,224 [main] INFO Revords - Entering UserName
+2024-11-14 11:06:33,912 [main] INFO Revords - Entering Password
+2024-11-14 11:06:34,218 [main] INFO Revords - Clicking Login Button
+2024-11-14 11:06:34,851 [main] INFO Revords - Clicked login Button
+2024-11-14 11:07:33,780 [main] INFO Revords - Spinwheel is not Present at customer page
+2024-11-15 09:32:58,905 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:33:00,773 [main] INFO Revords - UserName Entered
+2024-11-15 09:33:01,049 [main] INFO Revords - Password Entered
+2024-11-15 09:33:01,823 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:33:03,122 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:33:03,123 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:33:12,505 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:33:12,506 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:33:12,817 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:33:13,199 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:33:14,103 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:34:15,304 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:34:16,950 [main] INFO Revords - UserName Entered
+2024-11-15 09:34:17,197 [main] INFO Revords - Password Entered
+2024-11-15 09:34:18,379 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:34:19,167 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:34:19,169 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:34:28,624 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:34:28,625 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:34:28,934 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:34:29,316 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:34:29,717 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:37:13,007 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:37:14,809 [main] INFO Revords - UserName Entered
+2024-11-15 09:37:15,097 [main] INFO Revords - Password Entered
+2024-11-15 09:37:15,870 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:37:17,150 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:37:17,152 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:37:26,789 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:37:26,790 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:37:27,090 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:37:27,484 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:37:27,832 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:38:21,835 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:38:23,594 [main] INFO Revords - UserName Entered
+2024-11-15 09:38:23,847 [main] INFO Revords - Password Entered
+2024-11-15 09:38:24,637 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:38:25,987 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:38:25,988 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:38:35,371 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:38:35,372 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:38:35,665 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:38:36,049 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:38:36,418 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:42:10,456 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:42:12,237 [main] INFO Revords - UserName Entered
+2024-11-15 09:42:12,508 [main] INFO Revords - Password Entered
+2024-11-15 09:42:13,277 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:42:14,644 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:42:14,645 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:42:24,189 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:42:24,190 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:42:24,475 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:42:24,845 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:42:25,199 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:46:11,134 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:46:12,878 [main] INFO Revords - UserName Entered
+2024-11-15 09:46:13,125 [main] INFO Revords - Password Entered
+2024-11-15 09:46:14,057 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:46:15,747 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:46:15,748 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:46:25,058 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:46:25,059 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:46:25,349 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:46:25,697 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:46:26,046 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:47:59,164 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:48:00,876 [main] INFO Revords - UserName Entered
+2024-11-15 09:48:01,113 [main] INFO Revords - Password Entered
+2024-11-15 09:48:01,890 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:48:03,082 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:48:03,083 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:48:12,613 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:48:12,614 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:48:12,899 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:48:13,284 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:48:14,174 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:48:52,565 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:48:54,288 [main] INFO Revords - UserName Entered
+2024-11-15 09:48:54,559 [main] INFO Revords - Password Entered
+2024-11-15 09:48:55,352 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:48:56,651 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:48:56,652 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:49:06,437 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:49:06,438 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:49:06,737 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:49:07,114 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:49:07,468 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:53:58,162 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:53:59,920 [main] INFO Revords - UserName Entered
+2024-11-15 09:54:00,150 [main] INFO Revords - Password Entered
+2024-11-15 09:54:00,895 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:54:03,169 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:54:03,171 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:54:12,579 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:54:12,580 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:54:12,865 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:54:13,232 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:54:14,167 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:55:02,049 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:55:03,867 [main] INFO Revords - UserName Entered
+2024-11-15 09:55:04,113 [main] INFO Revords - Password Entered
+2024-11-15 09:55:04,884 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:55:06,095 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:55:06,097 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:55:16,230 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:55:16,231 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:55:16,519 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:55:16,887 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:55:17,264 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 09:56:51,877 [main] INFO Revords - App Installation status :- true
+2024-11-15 09:56:53,607 [main] INFO Revords - UserName Entered
+2024-11-15 09:56:53,864 [main] INFO Revords - Password Entered
+2024-11-15 09:56:54,614 [main] INFO Revords - Clicked Login Button
+2024-11-15 09:56:55,825 [main] INFO Revords - Customer logged in successfully
+2024-11-15 09:56:55,827 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 09:57:05,466 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 09:57:05,467 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 09:57:05,766 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 09:57:06,164 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 09:57:06,515 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 10:03:52,060 [main] INFO Revords - App Installation status :- true
+2024-11-15 10:03:53,909 [main] INFO Revords - UserName Entered
+2024-11-15 10:03:54,165 [main] INFO Revords - Password Entered
+2024-11-15 10:03:54,919 [main] INFO Revords - Clicked Login Button
+2024-11-15 10:03:56,432 [main] INFO Revords - Customer logged in successfully
+2024-11-15 10:03:56,434 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 10:04:06,126 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 10:04:06,127 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 10:04:06,450 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 10:04:06,897 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 10:04:07,283 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 10:05:22,313 [main] INFO Revords - App Installation status :- true
+2024-11-15 10:05:24,319 [main] INFO Revords - UserName Entered
+2024-11-15 10:05:24,585 [main] INFO Revords - Password Entered
+2024-11-15 10:05:25,400 [main] INFO Revords - Clicked Login Button
+2024-11-15 10:05:26,798 [main] INFO Revords - Customer logged in successfully
+2024-11-15 10:05:26,799 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 10:05:57,048 [main] INFO Revords - App Installation status :- true
+2024-11-15 10:05:59,032 [main] INFO Revords - UserName Entered
+2024-11-15 10:05:59,306 [main] INFO Revords - Password Entered
+2024-11-15 10:06:00,093 [main] INFO Revords - Clicked Login Button
+2024-11-15 10:06:01,484 [main] INFO Revords - Customer logged in successfully
+2024-11-15 10:06:01,486 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 10:06:11,223 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 10:06:11,224 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 10:06:11,552 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 10:06:12,070 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 10:06:12,633 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 10:12:02,709 [main] INFO Revords - App Installation status :- true
+2024-11-15 10:12:04,508 [main] INFO Revords - UserName Entered
+2024-11-15 10:12:04,757 [main] INFO Revords - Password Entered
+2024-11-15 10:12:05,531 [main] INFO Revords - Clicked Login Button
+2024-11-15 10:12:39,646 [main] INFO Revords - App Installation status :- true
+2024-11-15 10:12:41,466 [main] INFO Revords - UserName Entered
+2024-11-15 10:12:41,745 [main] INFO Revords - Password Entered
+2024-11-15 10:12:42,521 [main] INFO Revords - Clicked Login Button
+2024-11-15 10:12:43,914 [main] INFO Revords - Customer logged in successfully
+2024-11-15 10:12:43,916 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 10:12:53,560 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 10:12:53,561 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 10:12:53,930 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 10:12:54,404 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 10:12:54,931 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 10:14:58,157 [main] INFO Revords - App Installation status :- true
+2024-11-15 10:15:00,049 [main] INFO Revords - UserName Entered
+2024-11-15 10:15:00,285 [main] INFO Revords - Password Entered
+2024-11-15 10:15:01,077 [main] INFO Revords - Clicked Login Button
+2024-11-15 10:15:02,505 [main] INFO Revords - Customer logged in successfully
+2024-11-15 10:15:02,507 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-15 10:15:12,024 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-15 10:15:12,025 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-15 10:15:12,370 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-15 10:15:12,749 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-15 10:15:13,101 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-15 11:20:03,064 [main] INFO Revords - UserName Entered
+2024-11-15 11:20:05,431 [main] INFO Revords - Password Entered
+2024-11-15 11:20:05,821 [main] INFO Revords - Clicked Login Button
+2024-11-15 11:23:37,684 [main] INFO Revords - UserName Entered
+2024-11-15 11:23:40,053 [main] INFO Revords - Password Entered
+2024-11-15 11:23:40,876 [main] INFO Revords - Clicked Login Button
+2024-11-15 11:27:17,576 [main] INFO Revords - UserName Entered
+2024-11-15 11:27:19,953 [main] INFO Revords - Password Entered
+2024-11-15 11:27:20,768 [main] INFO Revords - Clicked Login Button
+2024-11-15 11:37:36,225 [main] INFO Revords - UserName Entered
+2024-11-15 11:37:38,619 [main] INFO Revords - Password Entered
+2024-11-15 11:37:39,471 [main] INFO Revords - Clicked Login Button
+2024-11-18 11:59:12,961 [main] INFO Revords - Login Successfull!!!! TC Passed
+2024-11-18 11:59:14,227 [main] INFO Revords - User Landed on Dashboard Page Successfully.TC Passed!!!!
+2024-11-18 11:59:15,580 [main] INFO Revords - defaultUser1's Session Time is :- 1:09:13
+2024-11-18 11:59:17,725 [main] INFO Revords - Redeem Button Enabled status before selection of Reward/Promotion/Autopilot : - false
+2024-11-18 11:59:18,936 [main] INFO Revords - Redeem Button Enabled Status after Selection of Reward/Promotion/Autopilot : - true
+2024-11-18 11:59:20,010 [main] INFO Revords - Redeem POPUP Yes Button visibility :- true
+2024-11-18 11:59:20,129 [main] INFO Revords - Redeem POPUP No Button visibility :- true
+2024-11-18 11:59:22,672 [main] INFO Revords - Rewards are Visible on DashBoard Page!!!!
+2024-11-18 11:59:30,016 [main] INFO Revords - UserName is :- USER 96633
+2024-11-18 11:59:30,205 [main] INFO Revords - User is Member Since :- Member Since Nov 08, 2024
+2024-11-18 11:59:30,412 [main] INFO Revords - user's Current Points :- 201 Current Point
+2024-11-18 11:59:30,620 [main] INFO Revords - User's LifeTime Points :- 201 Lifetime Point
+2024-11-18 11:59:30,787 [main] INFO Revords - User's PhoneNumber is :- (859) 659-6633
+2024-11-18 11:59:30,908 [main] INFO Revords - Is Email Field Present :- true
+2024-11-18 11:59:31,040 [main] INFO Revords - Is Notes Field Present :- true
+2024-11-18 11:59:35,725 [main] INFO Revords - Gust User Added Successfully!!!
+2024-11-18 11:59:45,325 [main] INFO Revords - User Name is :- Anonymous 4
+2024-11-18 11:59:45,513 [main] INFO Revords - Total Summary Rewards:- Earned points
+2024-11-18 11:59:46,108 [main] INFO Revords - Total Earned Points:- New Total
+2024-11-18 11:59:46,249 [main] INFO Revords - Summary Total:- 
+2024-11-18 11:59:47,145 [main] INFO Revords - User Signout SuccessFully
+2024-11-18 11:59:55,253 [main] INFO Revords - App Version Found:- App Version : 0.0.15
+2024-11-18 12:00:11,375 [main] INFO Revords - Promotion Redeem value is :- 0 Promotion Redeemed
+2024-11-18 12:00:20,779 [main] INFO Revords - AutoCampaignsRedeemed value is :- 0 Auto Campaigns Redeemed
+2024-11-18 12:00:30,375 [main] INFO Revords - RewardsRedeems value is :- 0 Rewards Redeemed
+2024-11-18 12:00:39,529 [main] INFO Revords - PointsEarned value is :- 1184 Points Earned
+2024-11-18 12:00:41,860 [main] INFO Revords - Both Date and activity Dropdown is visible and Clickable, TC Passed
+2024-11-18 12:03:24,419 [main] INFO Revords - Entering UserName
+2024-11-18 12:03:28,979 [main] INFO Revords - Entering Password
+2024-11-18 12:03:31,365 [main] INFO Revords - Clicking Login Button
+2024-11-18 12:03:32,028 [main] INFO Revords - Clicked login Button
+2024-11-18 12:04:21,428 [main] INFO Revords - User is not editable from History list
+2024-11-18 12:04:55,232 [main] INFO Revords - Spinwheel is not Present at customer page
+2024-11-18 12:06:03,061 [main] INFO Revords - Entering UserName
+2024-11-18 12:06:07,606 [main] INFO Revords - Entering Password
+2024-11-18 12:06:09,952 [main] INFO Revords - Clicking Login Button
+2024-11-18 12:06:22,637 [main] INFO Revords - Disabling Wifi at Home Page
+2024-11-18 12:06:53,578 [main] INFO Revords - Enabling Wifi...
+2024-11-18 12:06:55,415 [main] INFO Revords - Clicked Home Tab after Connection Restore
+2024-11-18 12:07:05,710 [main] INFO Revords - Disabling Wifi at History Tab
+2024-11-18 12:07:36,656 [main] INFO Revords - Enabling Wifi...
+2024-11-18 12:07:36,815 [main] INFO Revords - History Tab is Visible and Clicked After Network Restore
+2024-11-18 12:07:46,982 [main] INFO Revords - Disabling Wifi at New Tab
+2024-11-18 12:08:17,878 [main] INFO Revords - Enabling Wifi...
+2024-11-18 12:08:18,059 [main] INFO Revords - NewUser Tab is Visible and Clicked After Network Restore
+2024-11-18 12:08:28,365 [main] INFO Revords - Disabling Wifi at Setting Tab
+2024-11-18 12:08:59,148 [main] INFO Revords - Enabling Wifi...
+2024-11-18 12:08:59,549 [main] INFO Revords - Setting Tab is Visible and Clicked After Network Restore
+2024-11-18 12:09:52,394 [main] INFO Revords - App Installation status :- true
+2024-11-18 12:09:59,659 [main] INFO Revords - Login Failed!!!! Due to invalid credentials
+2024-11-18 12:10:02,090 [main] INFO Revords - UserName Entered
+2024-11-18 12:10:04,423 [main] INFO Revords - Password Entered
+2024-11-18 12:10:04,770 [main] INFO Revords - Clicked Login Button
+2024-11-18 12:10:06,496 [main] INFO Revords - Customer logged in successfully
+2024-11-18 12:10:06,497 [main] INFO Revords - Customer logged in successfully & Landed on Dashboard Page
+2024-11-18 12:10:18,231 [main] INFO Revords - Customer Unable to SignIn with less then 10 digit mobile number
+2024-11-18 12:10:18,461 [main] INFO Revords - Terms And Conditions link is visible  true
+2024-11-18 12:10:19,660 [main] INFO Revords - Customer landed on Terms AND Conditions Page
+2024-11-18 12:10:40,744 [main] ERROR Revords - Content is not visible in Terms and Conditions Page at Customer Tab
+2024-11-18 12:10:40,745 [main] ERROR Revords - Terms and Conditions Page is Closed
+2024-11-18 12:10:49,994 [main] INFO Revords - Customer is logged in Successfully using 10 digit Mobile Number
+2024-11-18 12:10:49,994 [main] INFO Revords - Customer is redirected to Enter Information Page
+2024-11-18 12:10:50,598 [main] INFO Revords - Entered Customer Name on Information Page
+2024-11-18 12:10:53,205 [main] INFO Revords - Entered Customer Email ID on Information Page
+2024-11-18 12:10:54,179 [main] INFO Revords - Customer clicked on Month DropDown
+2024-11-18 12:10:55,911 [main] INFO Revords - Customer Choosed Birth Month successfully
+2024-11-18 12:11:16,236 [main] ERROR Revords - Customer is unable to choose Birth Month 
+2024-11-18 12:11:16,576 [main] INFO Revords - Customer clicked on Datedrop Down
+2024-11-18 12:11:17,610 [main] INFO Revords - Customer Choosed birth date
+2024-11-18 12:11:18,877 [main] INFO Revords - Opt-in And Opt-out Radio Buttons are visible and clickable
+2024-11-18 12:11:19,292 [main] INFO Revords - Customer Age CheckBox checked Successfully
+2024-11-18 12:11:19,698 [main] INFO Revords - Age Check Box is Unchecked Now
+2024-11-18 12:11:20,093 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-18 12:11:20,093 [main] INFO Revords - Customer is unable to Signup without click on Age Check Box
+2024-11-18 12:11:24,314 [main] INFO Revords - Age CheckBOx is Checked Now Again
+2024-11-18 12:11:24,742 [main] INFO Revords - Now Customer is able to signUP after clickon Age check Box
+2024-11-18 12:11:25,466 [main] INFO Revords - Clicked Cancel Button from POPUP
+2024-11-18 12:11:26,374 [main] INFO Revords - Lets Start Button is Clicked
+2024-11-18 12:11:26,374 [main] INFO Revords - Customer is unable to Signup without click on Age Check Box
+2024-11-18 12:11:27,060 [main] INFO Revords - Clicked Yes Button from POPUP
+2024-11-18 12:11:30,529 [main] INFO Revords - Spinwheel is clicked
+2024-11-18 12:11:50,691 [main] INFO Revords - After Spin Reward POP Message is :- Congratulations you have earned
+2024-11-18 12:11:52,095 [main] INFO Revords - Reward at Spin Page PopUp :- 4 Points
+2024-11-18 12:11:52,397 [main] INFO Revords - Continue button is clicked at After Spin
+2024-11-18 12:11:53,567 [main] INFO Revords - Spin Reward Points at Revord Summary Page is :- 4
+2024-11-18 12:11:53,654 [main] INFO Revords - Customer Current Balance after Spin At Revord Summary Page :- 4 PT
+2024-11-18 12:11:53,738 [main] INFO Revords - Customer Name at Revord Summary Page :- piyush
+2024-11-18 12:13:29,283 [main] INFO Revords - Existing Customer entered Mobile Number
+2024-11-18 12:13:31,770 [main] INFO Revords - Customer is already Signed In
+2024-11-18 12:13:41,778 [main] INFO Revords - Disabling Wifi at Dashboard in Customer Tab
+2024-11-18 12:14:13,495 [main] INFO Revords - Wifi/Network is enabled in Customer Tab 
+2024-11-18 12:14:17,399 [main] INFO Revords - Next Button is clicked on dashboard after connection restore in Customer Tab
+2024-11-18 12:14:33,881 [main] INFO Revords - UserName Entered
+2024-11-18 12:14:36,235 [main] INFO Revords - Password Entered
+2024-11-18 12:14:37,044 [main] INFO Revords - Clicked Login Button
+2024-11-18 12:14:46,561 [main] INFO Revords - Entered Old Registered Number at Different location
+2024-11-18 12:14:47,377 [main] INFO Revords - Clicked Login Button
+2024-11-18 12:14:49,193 [main] INFO Revords - Old Registered User successfully logged in at New Location
+2024-11-18 12:14:49,193 [main] INFO Revords - Old Registered user get Opt-In Message at New Location
+2024-11-18 12:36:12,055 [main] INFO Revords - Entering UserName
+2024-11-18 12:36:16,706 [main] INFO Revords - Entering Password
+2024-11-18 12:36:19,143 [main] INFO Revords - Clicking Login Button
+2024-11-18 12:36:19,798 [main] INFO Revords - Clicked login Button

@@ -22,12 +22,12 @@ public class Dashboard extends Base
 	AndroidDriver driver;
 	WebDriverWait wait;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"defaultUser1\").instance(0)") private WebElement firstUser;
-	@AndroidFindBy(xpath = "(//android.view.View)[26]")private WebElement dashboardFirstuser;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"defaultUser1\").instance(0)")private WebElement dashboardFirstuser;
 	@AndroidFindBy(xpath = "(//android.view.View/android.view.View)[15]")private List<WebElement> userslist;
 	@AndroidFindBy(xpath = "(//android.widget.TextView)[14]")private WebElement firstUserSessionTime;
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Home\"]")private WebElement homeTab;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"History\")")private WebElement historyTab;
-	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Reward\").instance(0)") private WebElement reward;
+	@AndroidFindBy(xpath = "(//android.widget.TextView[@text=\"Reward\"])[1]") private WebElement reward;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"New\")")private WebElement newuser;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Settings\")")private WebElement settings;
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\")")private WebElement searchUser;
@@ -68,6 +68,9 @@ public class Dashboard extends Base
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Reward\").instance(0)")private WebElement rewardsHomePage;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Spin Wheel\")")private WebElement CustomerspinWheel;
 	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"$5 MatchPlay\").instance(0)")private WebElement customerspinwheelData;
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"AutoPilot\")")private WebElement customerPageAutoPilotText;
+	@AndroidFindBy(xpath = "//android.widget.CheckBox[@resource-id=\"ion-cb-1\"]")private WebElement customerPageAutopilotFieldData;
+	
 	public Dashboard(AndroidDriver driver)
 	{
 		this.driver=driver;
@@ -234,7 +237,7 @@ public class Dashboard extends Base
 	
 	public void click_firstUser()
 	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(390));
+		wait=new WebDriverWait(driver,Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(searchUser));
 		firstUserHistoryList.click();
 		
@@ -366,6 +369,18 @@ public class Dashboard extends Base
 	public  List<WebElement> userslist()
 	{
 		return userslist;
+	}
+	
+	public boolean customer_Page_Autopilot_Present()
+	{
+		boolean autopilotVisibility = customerPageAutoPilotText.isDisplayed();
+				return autopilotVisibility;
+	}
+	
+	public String getAutopilotData()
+	{
+		String autopilotData=customerPageAutopilotFieldData.getText();
+		return autopilotData;
 	}
 	
 }
